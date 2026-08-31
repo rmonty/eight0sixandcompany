@@ -27,7 +27,7 @@ body {
   margin: 0;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--brand-dark);
-  background-color: var(--brand-cream);
+  background-color: #ffffff;
   overflow-x: hidden;
   scrollbar-gutter: stable;
 }
@@ -42,35 +42,26 @@ a {
   background: transparent;
 }
 
-/* ── Three-section fixed background ── */
+/* ── Page background — clean white with soft pink washes (806 theme) ── */
 .page-bg-layer {
   position: absolute;
   inset: 0;
   z-index: -1;
-  display: flex;
-  flex-direction: column;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(253, 192, 220, 0.45), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 90% 15%, rgba(251, 207, 227, 0.4), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 85%, rgba(252, 212, 231, 0.35), transparent 55%),
+    #ffffff;
 }
 
 .page-bg-section {
-  flex: 1;
+  display: none;
 }
 
-/* Section 1 — vertical stripes */
+/* Kept for Layout markup compatibility; stripes removed to match 806 site */
 .page-bg-stripes {
-  background-color: #FFF8FB;
-  background-image: repeating-linear-gradient(
-    90deg,
-    rgba(253, 192, 220, 0.55) 0px,
-    rgba(253, 192, 220, 0.55) 30px,
-    rgba(251, 207, 227, 0.5) 30px,
-    rgba(251, 207, 227, 0.5) 60px,
-    rgba(255, 248, 251, 0.9) 60px,
-    rgba(255, 248, 251, 0.9) 90px,
-    rgba(252, 212, 231, 0.5) 90px,
-    rgba(252, 212, 231, 0.5) 120px,
-    rgba(253, 192, 220, 0.4) 120px,
-    rgba(253, 192, 220, 0.4) 150px
-  );
+  display: none;
 }
 
 
@@ -85,32 +76,18 @@ a {
   gap: 24px;
   padding: 0 48px;
   height: 72px;
-  background: rgba(255, 248, 251, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(188, 98, 140, 0.12);
   transition: box-shadow 0.25s ease;
   box-sizing: border-box;
   overflow: visible;
 }
 
-/* Scalloped bottom edge */
+/* Flat header edge — matches clean 806 layout (no scallop) */
 .site-header::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background-image: radial-gradient(
-    circle at 50% 0%,
-    rgba(255, 248, 251, 0.95) 17px,
-    rgba(188, 98, 140, 0.22) 17px,
-    rgba(188, 98, 140, 0.22) 18.5px,
-    transparent 19px
-  );
-  background-size: 38px 20px;
-  background-repeat: repeat-x;
-  pointer-events: none;
+  display: none;
 }
 
 .site-header--scrolled {
@@ -321,7 +298,7 @@ a {
 }
 
 .chip-active {
-  background: #fffcf9;
+  background: #FFF8FB;
   color: var(--brand-primary);
   border-color: var(--brand-primary);
   box-shadow: none;
@@ -1592,7 +1569,7 @@ h1 {
 
 /* Featured products */
 .home-featured {
-  background: #faf4f6;
+  background: linear-gradient(180deg, #FFF8FB 0%, #FDC0DC 100%);
   padding: 80px 0;
 }
 .home-featured-inner {
@@ -1979,7 +1956,7 @@ h1 {
   gap: 20px;
   padding: 24px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(255, 248, 251, 0.96), rgba(245, 232, 220, 0.88));
+  background: linear-gradient(135deg, rgba(255, 248, 251, 0.98), rgba(253, 192, 220, 0.55));
   box-shadow: var(--shadow-soft);
 }
 
@@ -2084,7 +2061,7 @@ h1 {
 }
 
 .home-social-widget-placeholder {
-  background: linear-gradient(135deg, #f4d8e3, #c9d0e8 44%, #f8efe6 100%);
+  background: linear-gradient(135deg, #FDC0DC, #FB82BA 44%, #FBCFE3 100%);
 }
 
 .home-social-fallback-label {
@@ -2125,7 +2102,7 @@ h1 {
 .home-social-fallback-tile,
 .home-social-fallback-tile--large {
   border-radius: 16px;
-  background-image: linear-gradient(135deg, #f4d8e3, #c9d0e8 44%, #f8efe6 100%);
+  background-image: linear-gradient(135deg, #FDC0DC, #FB82BA 44%, #FBCFE3 100%);
   background-size: cover;
   background-position: center;
   box-shadow: 0 12px 28px rgba(66, 20, 40, 0.12);
@@ -2612,7 +2589,7 @@ h1 {
   height: 56px;
   border-radius: 50%;
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   border: none;
   cursor: pointer;
   display: flex;
@@ -2667,7 +2644,7 @@ h1 {
 .chat-window {
   width: 340px;
   max-height: 480px;
-  background: #fffcf9;
+  background: #FFF8FB;
   border-radius: 14px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -2684,7 +2661,7 @@ h1 {
   justify-content: space-between;
   padding: 12px 16px;
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   flex-shrink: 0;
 }
 
@@ -2716,7 +2693,7 @@ h1 {
 .chat-header-btn {
   background: none;
   border: none;
-  color: #fffcf9;
+  color: #FFF8FB;
   cursor: pointer;
   padding: 4px;
   border-radius: 6px;
@@ -2817,7 +2794,7 @@ h1 {
 
 .chat-message--visitor .chat-message-bubble {
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   border-bottom-right-radius: 4px;
 }
 
@@ -2871,7 +2848,7 @@ h1 {
   height: 40px;
   border-radius: 50%;
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   border: none;
   cursor: pointer;
   display: flex;
@@ -2922,7 +2899,7 @@ h1 {
   border-radius: 10px;
   overflow: hidden;
   min-height: 420px;
-  background: #fffcf9;
+  background: #FFF8FB;
 }
 
 .admin-chat-sidebar {
@@ -2953,7 +2930,7 @@ h1 {
   padding: 12px;
   border: 1px solid #e8d5d9;
   border-radius: 8px;
-  background: #fffcf9;
+  background: #FFF8FB;
   cursor: pointer;
   text-align: left;
   font-family: inherit;
@@ -3015,7 +2992,7 @@ h1 {
   height: 18px;
   border-radius: 9px;
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   font-size: 0.62rem;
   font-weight: 700;
   padding: 0 4px;
@@ -3029,7 +3006,7 @@ h1 {
   height: 20px;
   border-radius: 10px;
   background: #BC628C;
-  color: #fffcf9;
+  color: #FFF8FB;
   font-size: 0.66rem;
   font-weight: 700;
   display: flex;
