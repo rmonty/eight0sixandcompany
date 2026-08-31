@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://806andcompany.com", "http://localhost:5173"],
+    "method": ["GET", "HEAD"],
+    "responseHeader": ["Content-Type", "Access-Control-Allow-Origin"],
+    "maxAgeSeconds": 3600
+  }
+]

@@ -1,0 +1,3404 @@
+{
+  "repository_name": "Eight0SixAndCompany",
+  "timestamp": "2026-06-14T23:51:43.907838+00:00",
+  "overall_score": 0.9652985074626865,
+  "check_summaries": [
+    {
+      "check_name": "function_size",
+      "description": "Checks that functions/methods do not exceed line count thresholds",
+      "check_type": "standard",
+      "total_entities_checked": 4044,
+      "findings_count": 64,
+      "warning_count": 64,
+      "score": 0.9841740850642928,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 150,
+          "description": "Functions exceeding 150.0 lines",
+          "entities": [
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20173,
+              "line_end": 28057,
+              "metric_value": 7884
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20175,
+              "line_end": 28056,
+              "metric_value": 7881
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13062,
+              "line_end": 20168,
+              "metric_value": 7106
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13064,
+              "line_end": 20167,
+              "metric_value": 7103
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7218,
+              "line_end": 13057,
+              "metric_value": 5839
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33480,
+              "line_end": 38921,
+              "metric_value": 5441
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33483,
+              "line_end": 38919,
+              "metric_value": 5436
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38926,
+              "line_end": 44351,
+              "metric_value": 5425
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38929,
+              "line_end": 44349,
+              "metric_value": 5420
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2280,
+              "line_end": 7213,
+              "metric_value": 4933
+            },
+            {
+              "entity_name": "src.pages.Admin.Admin",
+              "file_path": "src\\pages\\Admin.jsx",
+              "line_start": 58,
+              "line_end": 2023,
+              "metric_value": 1965
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28358,
+              "line_end": 30227,
+              "metric_value": 1869
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28361,
+              "line_end": 30225,
+              "metric_value": 1864
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.production.min.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 31800,
+              "line_end": 33475,
+              "metric_value": 1675
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 30244,
+              "line_end": 31795,
+              "metric_value": 1551
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier.\"node_modules/js-beautify/js/src/javascript/beautifier.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45948,
+              "line_end": 47017,
+              "metric_value": 1069
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 578,
+              "line_end": 1545,
+              "metric_value": 967
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 580,
+              "line_end": 1544,
+              "metric_value": 964
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 14235,
+              "line_end": 15167,
+              "metric_value": 932
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 21514,
+              "line_end": 22446,
+              "metric_value": 932
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 3010,
+              "line_end": 3773,
+              "metric_value": 763
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 8204,
+              "line_end": 8967,
+              "metric_value": 763
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16803,
+              "line_end": 17558,
+              "metric_value": 755
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 24092,
+              "line_end": 24838,
+              "metric_value": 746
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier3.\"node_modules/js-beautify/js/src/html/beautifier.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47910,
+              "line_end": 48543,
+              "metric_value": 633
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_production.\"node_modules/react/cjs/react.production.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 137,
+              "line_end": 573,
+              "metric_value": 436
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5445,
+              "line_end": 5878,
+              "metric_value": 433
+            },
+            {
+              "entity_name": "functions.lib.index.require_tokenizer2.\"node_modules/js-beautify/js/src/javascript/tokenizer.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45513,
+              "line_end": 45943,
+              "metric_value": 430
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10772,
+              "line_end": 11195,
+              "metric_value": 423
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier2.\"node_modules/js-beautify/js/src/css/beautifier.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47065,
+              "line_end": 47467,
+              "metric_value": 402
+            },
+            {
+              "entity_name": "src.pages.ProductDetail.ProductDetail",
+              "file_path": "src\\pages\\ProductDetail.jsx",
+              "line_start": 9,
+              "line_end": 391,
+              "metric_value": 382
+            },
+            {
+              "entity_name": "src.pages.Checkout.Checkout",
+              "file_path": "src\\pages\\Checkout.jsx",
+              "line_start": 24,
+              "line_end": 397,
+              "metric_value": 373
+            },
+            {
+              "entity_name": "src.components.ImageEditor.ImageEditor",
+              "file_path": "src\\components\\ImageEditor.jsx",
+              "line_start": 22,
+              "line_end": 373,
+              "metric_value": 351
+            },
+            {
+              "entity_name": "functions.lib.index.require_output.\"node_modules/js-beautify/js/src/core/output.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44378,
+              "line_end": 44696,
+              "metric_value": 318
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier2.\"node_modules/js-beautify/js/src/css/beautifier.js\".Beautifier.beautify",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47170,
+              "line_end": 47465,
+              "metric_value": 295
+            },
+            {
+              "entity_name": "functions.lib.index.require_tokenizer3.\"node_modules/js-beautify/js/src/html/tokenizer.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47615,
+              "line_end": 47905,
+              "metric_value": 290
+            },
+            {
+              "entity_name": "src.pages.Home.Home",
+              "file_path": "src\\pages\\Home.jsx",
+              "line_start": 8,
+              "line_end": 295,
+              "metric_value": 287
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_production_min.\"node_modules/resend/node_modules/react/cjs/react.production.min.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28085,
+              "line_end": 28353,
+              "metric_value": 268
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_jsx_runtime_development.\"node_modules/react/cjs/react-jsx-runtime.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1592,
+              "line_end": 1844,
+              "metric_value": 252
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 26081,
+              "line_end": 26332,
+              "metric_value": 251
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_jsx_runtime_development.\"node_modules/react/cjs/react-jsx-runtime.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1594,
+              "line_end": 1843,
+              "metric_value": 249
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_development.\"node_modules/react-dom/cjs/react-dom.development.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2010,
+              "line_end": 2249,
+              "metric_value": 239
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_development.\"node_modules/react-dom/cjs/react-dom.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2012,
+              "line_end": 2248,
+              "metric_value": 236
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18785,
+              "line_end": 19020,
+              "metric_value": 235
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js\".za3",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 30560,
+              "line_end": 30784,
+              "metric_value": 224
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.production.min.js\".Pa3",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32182,
+              "line_end": 32406,
+              "metric_value": 224
+            },
+            {
+              "entity_name": "src.pages.Contact.Contact",
+              "file_path": "src\\pages\\Contact.jsx",
+              "line_start": 16,
+              "line_end": 236,
+              "metric_value": 220
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 6897,
+              "line_end": 7109,
+              "metric_value": 212
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 12218,
+              "line_end": 12430,
+              "metric_value": 212
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 11216,
+              "line_end": 11427,
+              "metric_value": 211
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5899,
+              "line_end": 6104,
+              "metric_value": 205
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.pushAttribute",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13841,
+              "line_end": 14037,
+              "metric_value": 196
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.pushAttribute",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 21120,
+              "line_end": 21316,
+              "metric_value": 196
+            },
+            {
+              "entity_name": "src.components.ChatWidget.ChatWidget",
+              "file_path": "src\\components\\ChatWidget.jsx",
+              "line_start": 5,
+              "line_end": 199,
+              "metric_value": 194
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.validateProperty",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13310,
+              "line_end": 13502,
+              "metric_value": 192
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.validateProperty",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20446,
+              "line_end": 20638,
+              "metric_value": 192
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18375,
+              "line_end": 18558,
+              "metric_value": 183
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 25669,
+              "line_end": 25851,
+              "metric_value": 182
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".pushAttribute",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7828,
+              "line_end": 8007,
+              "metric_value": 179
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier.\"node_modules/js-beautify/js/src/javascript/beautifier.js\".Beautifier.handle_word",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 46531,
+              "line_end": 46709,
+              "metric_value": 178
+            },
+            {
+              "entity_name": "functions.src.index.createOrderSecure.onCall() callback",
+              "file_path": "functions\\src\\index.jsx",
+              "line_start": 474,
+              "line_end": 640,
+              "metric_value": 166
+            },
+            {
+              "entity_name": "functions.lib.index.dn2.no2() callback",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51676,
+              "line_end": 51841,
+              "metric_value": 165
+            },
+            {
+              "entity_name": "src.pages.ProductDetail.ProductDetail.product.variants.map() callback",
+              "file_path": "src\\pages\\ProductDetail.jsx",
+              "line_start": 189,
+              "line_end": 351,
+              "metric_value": 162
+            },
+            {
+              "entity_name": "functions.lib.index.require_templatablepattern.\"node_modules/js-beautify/js/src/core/templatablepattern.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45358,
+              "line_end": 45508,
+              "metric_value": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "fan_out",
+      "description": "Checks efferent coupling: how many other functions each function calls",
+      "check_type": "standard",
+      "total_entities_checked": 4480,
+      "findings_count": 92,
+      "warning_count": 92,
+      "score": 0.9794642857142857,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 10,
+          "description": "Functions calling more than 10.0 other functions",
+          "entities": [
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.memo",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1419,
+              "line_end": 1442,
+              "metric_value": 37
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28361,
+              "line_end": 30225,
+              "metric_value": 36
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 14235,
+              "line_end": 15167,
+              "metric_value": 31
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 21514,
+              "line_end": 22446,
+              "metric_value": 31
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 24092,
+              "line_end": 24838,
+              "metric_value": 31
+            },
+            {
+              "entity_name": "functions.lib.index.Tokenizer.parse",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 56651,
+              "line_end": 56774,
+              "metric_value": 31
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16803,
+              "line_end": 17558,
+              "metric_value": 30
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10772,
+              "line_end": 11195,
+              "metric_value": 28
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5445,
+              "line_end": 5878,
+              "metric_value": 27
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeTagOpen",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50503,
+              "line_end": 50540,
+              "metric_value": 27
+            },
+            {
+              "entity_name": "functions.lib.index.ho",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51332,
+              "line_end": 51381,
+              "metric_value": 25
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.cloneElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1271,
+              "line_end": 1313,
+              "metric_value": 25
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33483,
+              "line_end": 38919,
+              "metric_value": 25
+            },
+            {
+              "entity_name": "functions.lib.index.Ua.tokenize",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50260,
+              "line_end": 50276,
+              "metric_value": 25
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 3010,
+              "line_end": 3773,
+              "metric_value": 24
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 8204,
+              "line_end": 8967,
+              "metric_value": 24
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38929,
+              "line_end": 44349,
+              "metric_value": 22
+            },
+            {
+              "entity_name": "functions.lib.index.ci",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49721,
+              "line_end": 49726,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.defineKeyPropWarningGetter",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 716,
+              "line_end": 728,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.ReactElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 737,
+              "line_end": 777,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.defineKeyPropWarningGetter",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28761,
+              "line_end": 28775,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.defineRefPropWarningGetter",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28776,
+              "line_end": 28790,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18375,
+              "line_end": 18558,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 25669,
+              "line_end": 25851,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_jsx_runtime_development.\"node_modules/react/cjs/react-jsx-runtime.development.js\".<function>.defineKeyPropWarningGetter",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1688,
+              "line_end": 1700,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_jsx_runtime_development.\"node_modules/react/cjs/react-jsx-runtime.development.js\".<function>.ReactElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1709,
+              "line_end": 1749,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "src.pages.Admin.Admin",
+              "file_path": "src\\pages\\Admin.jsx",
+              "line_start": 58,
+              "line_end": 2023,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.OrderConfirmationEmail",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59987,
+              "line_end": 60060,
+              "metric_value": 20
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.hasValidKey",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 709,
+              "line_end": 715,
+              "metric_value": 20
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.hasValidKey",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28750,
+              "line_end": 28760,
+              "metric_value": 20
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.hasValidRef",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28739,
+              "line_end": 28749,
+              "metric_value": 20
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_jsx_runtime_development.\"node_modules/react/cjs/react-jsx-runtime.development.js\".<function>.hasValidKey",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1681,
+              "line_end": 1687,
+              "metric_value": 20
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 6542,
+              "line_end": 6687,
+              "metric_value": 19
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".performWork",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 11873,
+              "line_end": 12013,
+              "metric_value": 19
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 11216,
+              "line_end": 11427,
+              "metric_value": 19
+            },
+            {
+              "entity_name": "functions.lib.index.Ja.build",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50933,
+              "line_end": 50936,
+              "metric_value": 18
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5899,
+              "line_end": 6104,
+              "metric_value": 18
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeEntity",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50430,
+              "line_end": 50459,
+              "metric_value": 18
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 26081,
+              "line_end": 26332,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 12218,
+              "line_end": 12430,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeDirective",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50682,
+              "line_end": 50694,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "src.App.App",
+              "file_path": "src\\App.jsx",
+              "line_start": 20,
+              "line_end": 44,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.OwnerNewOrderEmail",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 60209,
+              "line_end": 60285,
+              "metric_value": 16
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeLetDeclaration",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50317,
+              "line_end": 50330,
+              "metric_value": 16
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7218,
+              "line_end": 13057,
+              "metric_value": 15
+            },
+            {
+              "entity_name": "functions.lib.index.ShippingNotificationEmail",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 60402,
+              "line_end": 60437,
+              "metric_value": 15
+            },
+            {
+              "entity_name": "functions.lib.index.Ce",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 52552,
+              "line_end": 52683,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35833,
+              "line_end": 35909,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js\".Ib",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 31236,
+              "line_end": 31376,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.replayElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 24856,
+              "line_end": 24989,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.pushStartInstance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41376,
+              "line_end": 41452,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production_min.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.production.min.js\".Xc",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32894,
+              "line_end": 33042,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.sr2.r2",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 52360,
+              "line_end": 52393,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.cloneNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54461,
+              "line_end": 54511,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.Ja._consumeElementStartTag",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51023,
+              "line_end": 51035,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18785,
+              "line_end": 19020,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.replayElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 17576,
+              "line_end": 17703,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38130,
+              "line_end": 38209,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\"",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2280,
+              "line_end": 7213,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 6897,
+              "line_end": 7109,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderElement",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43609,
+              "line_end": 43688,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeBlockParameters",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50298,
+              "line_end": 50316,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeBlockStart",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50281,
+              "line_end": 50294,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.createOrderSecure.<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 60888,
+              "line_end": 61017,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ja._consumeComponentStartTag",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51036,
+              "line_end": 51044,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.abortTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18211,
+              "line_end": 18271,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderIndeterminateComponent",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37954,
+              "line_end": 38013,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.abortTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 25497,
+              "line_end": 25557,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderIndeterminateComponent",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43433,
+              "line_end": 43492,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ta.<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49611,
+              "line_end": 49611,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeInterpolation",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50663,
+              "line_end": 50681,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeLetDeclarationValue",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50335,
+              "line_end": 50343,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeTagClose",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50612,
+              "line_end": 50628,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.Ze",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49655,
+              "line_end": 49662,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.ContactInquiryEmail",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59876,
+              "line_end": 59918,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.sendContactInquiry.<function>",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 60635,
+              "line_end": 60679,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeWithInterpolation",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50652,
+              "line_end": 50662,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createElementWithValidation",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29912,
+              "line_end": 29955,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.finishedTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18336,
+              "line_end": 18374,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 17718,
+              "line_end": 17834,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderNodeDestructiveImpl",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38240,
+              "line_end": 38316,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.renderSuspenseBoundary",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37833,
+              "line_end": 37891,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".abortTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 6394,
+              "line_end": 6446,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".finishedTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 6506,
+              "line_end": 6541,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.finishedTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 25630,
+              "line_end": 25668,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.retryNode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 25004,
+              "line_end": 25120,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.flushCompletedQueues",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44196,
+              "line_end": 44264,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderNodeDestructiveImpl",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43719,
+              "line_end": 43795,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.renderSuspenseBoundary",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43312,
+              "line_end": 43370,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".abortTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 11717,
+              "line_end": 11769,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".finishedTask",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 11837,
+              "line_end": 11872,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._consumeComponentName",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50554,
+              "line_end": 50559,
+              "metric_value": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "fan_in",
+      "description": "Checks afferent coupling: how many other functions call each function",
+      "check_type": "standard",
+      "total_entities_checked": 4480,
+      "findings_count": 62,
+      "warning_count": 62,
+      "score": 0.9861607142857143,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 10,
+          "description": "Functions called by more than 10.0 other functions",
+          "entities": [
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.error",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33499,
+              "line_end": 33508,
+              "metric_value": 47
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.error",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38945,
+              "line_end": 38954,
+              "metric_value": 45
+            },
+            {
+              "entity_name": "functions.lib.index.Oi.peek",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50802,
+              "line_end": 50804,
+              "metric_value": 32
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._beginToken",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50353,
+              "line_end": 50355,
+              "metric_value": 28
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._endToken",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50356,
+              "line_end": 50361,
+              "metric_value": 28
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.error",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28465,
+              "line_end": 28474,
+              "metric_value": 24
+            },
+            {
+              "entity_name": "functions.lib.index.Ka.clone",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50853,
+              "line_end": 50855,
+              "metric_value": 23
+            },
+            {
+              "entity_name": "functions.lib.index.Oi.clone",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50799,
+              "line_end": 50801,
+              "metric_value": 23
+            },
+            {
+              "entity_name": "functions.lib.index.Oi.advance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50811,
+              "line_end": 50813,
+              "metric_value": 22
+            },
+            {
+              "entity_name": "functions.lib.index.Ka.advance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50847,
+              "line_end": 50849,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.resolveDispatcher",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 961,
+              "line_end": 967,
+              "metric_value": 21
+            },
+            {
+              "entity_name": "functions.lib.index.ee.toString",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49982,
+              "line_end": 49985,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.stringToChunk",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33540,
+              "line_end": 33542,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.writeChunk",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20289,
+              "line_end": 20317,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".writeChunk",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7257,
+              "line_end": 7285,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._attemptCharCodeUntilFn",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50400,
+              "line_end": 50402,
+              "metric_value": 17
+            },
+            {
+              "entity_name": "functions.lib.index.Ja._advance",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50937,
+              "line_end": 50940,
+              "metric_value": 16
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.stringToChunk",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 39079,
+              "line_end": 39081,
+              "metric_value": 16
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.resolveDispatcher",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29392,
+              "line_end": 29400,
+              "metric_value": 15
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.writeChunkAndReturn",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33532,
+              "line_end": 33534,
+              "metric_value": 15
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.writeChunkAndReturn",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 39063,
+              "line_end": 39066,
+              "metric_value": 14
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.escapeTextForBrowser",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13525,
+              "line_end": 13560,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".escapeTextForBrowser",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2441,
+              "line_end": 2475,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.abort",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 26368,
+              "line_end": 26391,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.escapeTextForBrowser",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20661,
+              "line_end": 20696,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".abort",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 12466,
+              "line_end": 12482,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".escapeTextForBrowser",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7409,
+              "line_end": 7443,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.y.create",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50900,
+              "line_end": 50902,
+              "metric_value": 13
+            },
+            {
+              "entity_name": "functions.lib.index.__copyProps.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 18,
+              "line_end": 18,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.v",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50737,
+              "line_end": 50739,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.oo2.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51672,
+              "line_end": 51672,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.defineDeprecationWarning.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 583,
+              "line_end": 589,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.forwardRef.elementType.displayName.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1389,
+              "line_end": 1391,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext._currentValue.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29161,
+              "line_end": 29163,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext._currentValue2.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29169,
+              "line_end": 29171,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext._threadCount.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29177,
+              "line_end": 29179,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext.Consumer.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29185,
+              "line_end": 29191,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext.displayName.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29194,
+              "line_end": 29196,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createContext.Provider.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29149,
+              "line_end": 29155,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.createFactoryWithValidation.validatedFactory.type.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29967,
+              "line_end": 29973,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.defineDeprecationWarning.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28592,
+              "line_end": 28595,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.forwardRef.elementType.displayName.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29328,
+              "line_end": 29330,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.lazy.defaultProps.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29274,
+              "line_end": 29276,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.lazy.propTypes.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29287,
+              "line_end": 29289,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development2.\"node_modules/resend/node_modules/react/cjs/react.development.js\".<function>.memo.elementType.displayName.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29379,
+              "line_end": 29381,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.getThrownInfo.errorInfo.componentStack.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16607,
+              "line_end": 16621,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_production.\"node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js\".getThrownInfo.errorInfo.componentStack.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5271,
+              "line_end": 5285,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.getThrownInfo.errorInfo.componentStack.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 23901,
+              "line_end": 23915,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".getThrownInfo.errorInfo.componentStack.get",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10603,
+              "line_end": 10617,
+              "metric_value": 12
+            },
+            {
+              "entity_name": "functions.lib.index.E",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 48778,
+              "line_end": 48780,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.Oi.getSpan",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50817,
+              "line_end": 50823,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.getComponentNameFromType",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36317,
+              "line_end": 36375,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.getComponentNameFromType",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41796,
+              "line_end": 41854,
+              "metric_value": 11
+            },
+            {
+              "entity_name": "functions.lib.index.Ka.getChars",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50856,
+              "line_end": 50860,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.Oi.getChars",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50824,
+              "line_end": 50826,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_legacy_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js\".<function>.startChunkForTag",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35821,
+              "line_end": 35831,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development.\"node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.writeChunkAndReturn",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20322,
+              "line_end": 20325,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.startChunkForTag",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41364,
+              "line_end": 41374,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_development2.\"node_modules/resend/node_modules/react-dom/cjs/react-dom-server.node.development.js\".<function>.writeChunk",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 39052,
+              "line_end": 39058,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_dom_server_node_production.\"node_modules/react-dom/cjs/react-dom-server.node.production.js\".writeChunkAndReturn",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7290,
+              "line_end": 7293,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._attemptCharCode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50371,
+              "line_end": 50373,
+              "metric_value": 10
+            },
+            {
+              "entity_name": "functions.lib.index.Ua._requireCharCode",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50377,
+              "line_end": 50380,
+              "metric_value": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "god_class",
+      "description": "Detects classes with too many methods, too much code, or too many outgoing dependencies",
+      "check_type": "standard",
+      "total_entities_checked": 160,
+      "findings_count": 11,
+      "warning_count": 11,
+      "score": 0.93125,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 25,
+          "description": "Classes exceeding god class criteria (methods, LOC, or fan-out)",
+          "entities": [
+            {
+              "entity_name": "functions.lib.index.require_beautifier.\"node_modules/js-beautify/js/src/javascript/beautifier.js\".Beautifier",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 974.0
+            },
+            {
+              "entity_name": "functions.lib.index.Tokenizer",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 697.0
+            },
+            {
+              "entity_name": "functions.lib.index.Ua",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 489.0
+            },
+            {
+              "entity_name": "functions.lib.index.require_beautifier3.\"node_modules/js-beautify/js/src/html/beautifier.js\".Beautifier",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 463.0
+            },
+            {
+              "entity_name": "functions.lib.index.require_react_development.\"node_modules/react/cjs/react.development.js\".<function>.Component",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 463.0
+            },
+            {
+              "entity_name": "functions.lib.index.Ja",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 156.0
+            },
+            {
+              "entity_name": "functions.lib.index.Be",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 36.0
+            },
+            {
+              "entity_name": "functions.lib.index.Parser",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 35.0
+            },
+            {
+              "entity_name": "functions.lib.index.BlockTextBuilder",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 34.0
+            },
+            {
+              "entity_name": "functions.lib.index.EntityDecoder",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 32.0
+            },
+            {
+              "entity_name": "functions.lib.index.Qt2",
+              "file_path": "functions\\lib\\index.js",
+              "metric_value": 28.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "unused_code_diagnostics",
+      "description": "Detects unused imports, variables, functions, and dead code via LSP diagnostics",
+      "check_type": "standard",
+      "total_entities_checked": 236,
+      "findings_count": 236,
+      "warning_count": 0,
+      "score": 0.0,
+      "finding_groups": [
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Variables declared but never used",
+          "entities": [
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34,
+              "line_end": 34,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'prevActQueue' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 994,
+              "line_end": 994,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1550,
+              "line_end": 1550,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 1849,
+              "line_end": 1849,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2254,
+              "line_end": 2254,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2505,
+              "line_end": 2505,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'externalRuntimeConfig' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2508,
+              "line_end": 2508,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 2884,
+              "line_end": 2884,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 4883,
+              "line_end": 4883,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5069,
+              "line_end": 5069,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 5240,
+              "line_end": 5240,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7483,
+              "line_end": 7483,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'externalRuntimeConfig' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7600,
+              "line_end": 7600,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'renderState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 7717,
+              "line_end": 7717,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 8073,
+              "line_end": 8073,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10086,
+              "line_end": 10086,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10278,
+              "line_end": 10278,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 10572,
+              "line_end": 10572,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13065,
+              "line_end": 13065,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13068,
+              "line_end": 13068,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'externalRuntimeConfig' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 13568,
+              "line_end": 13568,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16316,
+              "line_end": 16316,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'legacyContext' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16439,
+              "line_end": 16439,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'legacyContext' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16467,
+              "line_end": 16467,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 16496,
+              "line_end": 16496,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20082,
+              "line_end": 20082,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20176,
+              "line_end": 20176,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20179,
+              "line_end": 20179,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'externalRuntimeConfig' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20828,
+              "line_end": 20828,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'renderState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 20969,
+              "line_end": 20969,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 23483,
+              "line_end": 23483,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'legacyContext' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 23733,
+              "line_end": 23733,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'legacyContext' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 23761,
+              "line_end": 23761,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 23790,
+              "line_end": 23790,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 27561,
+              "line_end": 27561,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'publicInstance' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28511,
+              "line_end": 28511,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'callback' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28529,
+              "line_end": 28529,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'completeState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28545,
+              "line_end": 28545,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'partialState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 28560,
+              "line_end": 28560,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29553,
+              "line_end": 29553,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29675,
+              "line_end": 29675,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'children' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29912,
+              "line_end": 29912,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'element' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29978,
+              "line_end": 29978,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'options' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 29986,
+              "line_end": 29986,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'reject' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 30114,
+              "line_end": 30114,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 30232,
+              "line_end": 30232,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'b3' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 30785,
+              "line_end": 30785,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 31157,
+              "line_end": 31157,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 31189,
+              "line_end": 31189,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32014,
+              "line_end": 32014,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'c2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32044,
+              "line_end": 32044,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'b3' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32422,
+              "line_end": 32422,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32819,
+              "line_end": 32819,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 32847,
+              "line_end": 32847,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'destination' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33527,
+              "line_end": 33527,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'destination' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 33535,
+              "line_end": 33535,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34108,
+              "line_end": 34108,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34202,
+              "line_end": 34202,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34775,
+              "line_end": 34775,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'value' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34938,
+              "line_end": 34938,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'value' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 34945,
+              "line_end": 34945,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35049,
+              "line_end": 35049,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35144,
+              "line_end": 35144,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35154,
+              "line_end": 35154,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35172,
+              "line_end": 35172,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'props' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35912,
+              "line_end": 35912,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35970,
+              "line_end": 35970,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35973,
+              "line_end": 35973,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 35981,
+              "line_end": 35981,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36005,
+              "line_end": 36005,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36008,
+              "line_end": 36008,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36011,
+              "line_end": 36011,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36456,
+              "line_end": 36456,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36578,
+              "line_end": 36578,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36583,
+              "line_end": 36583,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'inst' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36929,
+              "line_end": 36929,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'instance' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 36968,
+              "line_end": 36968,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'create' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37515,
+              "line_end": 37515,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37551,
+              "line_end": 37551,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37555,
+              "line_end": 37555,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37698,
+              "line_end": 37698,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37736,
+              "line_end": 37736,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 37908,
+              "line_end": 37908,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'segment' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38387,
+              "line_end": 38387,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'size' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38876,
+              "line_end": 38876,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'generateStaticMarkup' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38885,
+              "line_end": 38885,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'destination' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 38982,
+              "line_end": 38982,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 39647,
+              "line_end": 39647,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 39741,
+              "line_end": 39741,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'tagName' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40314,
+              "line_end": 40314,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'value' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40477,
+              "line_end": 40477,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'value' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40484,
+              "line_end": 40484,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40588,
+              "line_end": 40588,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40687,
+              "line_end": 40687,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40697,
+              "line_end": 40697,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 40715,
+              "line_end": 40715,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'props' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41455,
+              "line_end": 41455,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41513,
+              "line_end": 41513,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41516,
+              "line_end": 41516,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41524,
+              "line_end": 41524,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41548,
+              "line_end": 41548,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41551,
+              "line_end": 41551,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'responseState' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41554,
+              "line_end": 41554,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 41935,
+              "line_end": 41935,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 42057,
+              "line_end": 42057,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'source' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 42062,
+              "line_end": 42062,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'inst' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 42408,
+              "line_end": 42408,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'instance' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 42447,
+              "line_end": 42447,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'create' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 42994,
+              "line_end": 42994,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43030,
+              "line_end": 43030,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'subscribe' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43034,
+              "line_end": 43034,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43177,
+              "line_end": 43177,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43215,
+              "line_end": 43215,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'request' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43387,
+              "line_end": 43387,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'segment' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 43866,
+              "line_end": 43866,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44378,
+              "line_end": 44378,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44701,
+              "line_end": 44701,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44742,
+              "line_end": 44742,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44868,
+              "line_end": 44868,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 44917,
+              "line_end": 44917,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45052,
+              "line_end": 45052,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45099,
+              "line_end": 45099,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45161,
+              "line_end": 45161,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45231,
+              "line_end": 45231,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'previous_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45290,
+              "line_end": 45290,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'current_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45299,
+              "line_end": 45299,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'current_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45302,
+              "line_end": 45302,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'current_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45305,
+              "line_end": 45305,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45327,
+              "line_end": 45327,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45358,
+              "line_end": 45358,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45513,
+              "line_end": 45513,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'open_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45600,
+              "line_end": 45600,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 45948,
+              "line_end": 45948,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47022,
+              "line_end": 47022,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47039,
+              "line_end": 47039,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47065,
+              "line_end": 47065,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47472,
+              "line_end": 47472,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47489,
+              "line_end": 47489,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47615,
+              "line_end": 47615,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'current_token' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47672,
+              "line_end": 47672,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'c2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47856,
+              "line_end": 47856,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 47910,
+              "line_end": 47910,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 48548,
+              "line_end": 48548,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 48565,
+              "line_end": 48565,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'exports2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 48584,
+              "line_end": 48584,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 48931,
+              "line_end": 48931,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49260,
+              "line_end": 49260,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'r2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49270,
+              "line_end": 49270,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49278,
+              "line_end": 49278,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49284,
+              "line_end": 49284,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49288,
+              "line_end": 49288,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49300,
+              "line_end": 49300,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49362,
+              "line_end": 49362,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49379,
+              "line_end": 49379,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49386,
+              "line_end": 49386,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49390,
+              "line_end": 49390,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49394,
+              "line_end": 49394,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49424,
+              "line_end": 49424,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49428,
+              "line_end": 49428,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49707,
+              "line_end": 49707,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 49714,
+              "line_end": 49714,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50131,
+              "line_end": 50131,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50133,
+              "line_end": 50133,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50135,
+              "line_end": 50135,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50137,
+              "line_end": 50137,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50139,
+              "line_end": 50139,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50146,
+              "line_end": 50146,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50153,
+              "line_end": 50153,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'e2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 50155,
+              "line_end": 50155,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51654,
+              "line_end": 51654,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'of' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51676,
+              "line_end": 51676,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'Aa2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51677,
+              "line_end": 51677,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51919,
+              "line_end": 51919,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51922,
+              "line_end": 51922,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 51928,
+              "line_end": 51928,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53221,
+              "line_end": 53221,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53223,
+              "line_end": 53223,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53226,
+              "line_end": 53226,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53229,
+              "line_end": 53229,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53232,
+              "line_end": 53232,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53234,
+              "line_end": 53234,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53236,
+              "line_end": 53236,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53239,
+              "line_end": 53239,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53242,
+              "line_end": 53242,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53259,
+              "line_end": 53259,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'u' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53426,
+              "line_end": 53426,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 't2' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53625,
+              "line_end": 53625,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'q0' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53678,
+              "line_end": 53678,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'pf' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53727,
+              "line_end": 53727,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'af' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53730,
+              "line_end": 53730,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'sf' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53731,
+              "line_end": 53731,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'Df' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53734,
+              "line_end": 53734,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'cf' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53735,
+              "line_end": 53735,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'ff' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53736,
+              "line_end": 53736,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'hf' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53741,
+              "line_end": 53741,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'gf' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 53742,
+              "line_end": 53742,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'a' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54212,
+              "line_end": 54212,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'va3' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54818,
+              "line_end": 54818,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'ra3' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54824,
+              "line_end": 54824,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'fullstop' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54954,
+              "line_end": 54954,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'lbr' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 54977,
+              "line_end": 54977,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'listSelector_' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55009,
+              "line_end": 55009,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'm' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55031,
+              "line_end": 55031,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'm' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55077,
+              "line_end": 55077,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'm' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55083,
+              "line_end": 55083,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'sel' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55215,
+              "line_end": 55215,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'sel' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55424,
+              "line_end": 55424,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'el' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55524,
+              "line_end": 55524,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'el' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 55590,
+              "line_end": 55590,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'htmlDecoder' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 56020,
+              "line_end": 56020,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'xmlDecoder' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 56021,
+              "line_end": 56021,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'encode_html_default' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 57266,
+              "line_end": 57266,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'escapeUTF8' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 57317,
+              "line_end": 57317,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'acc' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 57660,
+              "line_end": 57660,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'dom' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58489,
+              "line_end": 58489,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'm' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58579,
+              "line_end": 58579,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58582,
+              "line_end": 58582,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58584,
+              "line_end": 58584,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58587,
+              "line_end": 58587,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'formatOptions' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58592,
+              "line_end": 58592,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'formatOptions' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58607,
+              "line_end": 58607,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'walk' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58627,
+              "line_end": 58627,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'walk' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58634,
+              "line_end": 58634,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58757,
+              "line_end": 58757,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58760,
+              "line_end": 58760,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'elem' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58763,
+              "line_end": 58763,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'walk' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 58815,
+              "line_end": 58815,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'options' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59115,
+              "line_end": 59115,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'acc' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59116,
+              "line_end": 59116,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'options' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59117,
+              "line_end": 59117,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'ReactDomServer' is declared but its value is never read.",
+              "file_path": "functions\\lib\\index.js",
+              "line_start": 59354,
+              "line_end": 59354,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'auth' is declared but its value is never read.",
+              "file_path": "scripts\\add-authorized-domains.js",
+              "line_start": 10,
+              "line_end": 10,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'authSettings' is declared but its value is never read.",
+              "file_path": "scripts\\add-authorized-domains.js",
+              "line_start": 24,
+              "line_end": 24,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'placeholder' is declared but its value is never read.",
+              "file_path": "src\\components\\RichTextEditor.jsx",
+              "line_start": 6,
+              "line_end": 6,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'data' is declared but its value is never read.",
+              "file_path": "src\\pages\\Checkout.jsx",
+              "line_start": 363,
+              "line_end": 363,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'selectedVariantSummary' is declared but its value is never read.",
+              "file_path": "src\\pages\\ProductDetail.jsx",
+              "line_start": 111,
+              "line_end": 111,
+              "metric_value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "file_summaries": [
+    {
+      "file_path": "functions\\lib\\index.js",
+      "total_findings": 449,
+      "warning_findings": 218,
+      "composite_risk_score": 100.0
+    },
+    {
+      "file_path": "src\\pages\\ProductDetail.jsx",
+      "total_findings": 3,
+      "warning_findings": 2,
+      "composite_risk_score": 40.0
+    },
+    {
+      "file_path": "src\\pages\\Admin.jsx",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "src\\pages\\Checkout.jsx",
+      "total_findings": 2,
+      "warning_findings": 1,
+      "composite_risk_score": 25.0
+    },
+    {
+      "file_path": "scripts\\add-authorized-domains.js",
+      "total_findings": 2,
+      "warning_findings": 0,
+      "composite_risk_score": 20.0
+    },
+    {
+      "file_path": "src\\components\\ImageEditor.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "src\\pages\\Home.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "src\\pages\\Contact.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "src\\components\\ChatWidget.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "functions\\src\\index.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "src\\App.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "src\\components\\RichTextEditor.jsx",
+      "total_findings": 1,
+      "warning_findings": 0,
+      "composite_risk_score": 10.0
+    }
+  ]
+}
