@@ -31,8 +31,11 @@ jobs:
         run: npm install --legacy-peer-deps
 
       # Demo mode: omit VITE_FIREBASE_* so the app uses mock products/gallery.
+      # Subpath base is required for https://rmonty.github.io/eight0sixandcompany/
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE_PATH: /eight0sixandcompany/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
