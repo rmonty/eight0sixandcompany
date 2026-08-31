@@ -462,7 +462,7 @@ export function Checkout() {
               ))}
             </div>
             {fulfillmentError && fulfillmentMethod === 'ship' && (
-              <p style={{ margin: '8px 0 0', fontSize: '0.88rem', color: '#9A4A2C' }}>{fulfillmentError}</p>
+              <p style={{ margin: '8px 0 0', fontSize: '0.88rem', color: '#BC628C' }}>{fulfillmentError}</p>
             )}
           </div>
 
@@ -564,7 +564,7 @@ export function Checkout() {
             )}
           </label>
           {noteImageError && (
-            <p style={{ margin: 0, fontSize: '0.88rem', color: '#9A4A2C' }}>{noteImageError}</p>
+            <p style={{ margin: 0, fontSize: '0.88rem', color: '#BC628C' }}>{noteImageError}</p>
           )}
           {noteImages.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 4 }}>

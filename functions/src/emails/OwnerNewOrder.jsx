@@ -151,7 +151,7 @@ const container = {
 }
 
 const heading = {
-  color: '#9A4A2C',
+  color: '#BC628C',
   fontSize: '26px',
   fontWeight: '700',
   margin: '0 0 8px',
@@ -216,7 +216,7 @@ const subtotalLine = {
 
 const discountLine = {
   fontSize: '14px',
-  color: '#9A4A2C',
+  color: '#BC628C',
   margin: '0 0 4px',
   textAlign: 'right',
 }
@@ -276,7 +276,7 @@ const notesText = {
   whiteSpace: 'pre-wrap',
 }
 
-const link = { color: '#9A4A2C' }
+const link = { color: '#BC628C' }
 
 const footer = {
   fontSize: '12px',

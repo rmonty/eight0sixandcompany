@@ -78,7 +78,7 @@ const container = {
 }
 
 const heading = {
-  color: '#9A4A2C',
+  color: '#BC628C',
   fontSize: '26px',
   fontWeight: '700',
   margin: '0 0 8px',
@@ -117,7 +117,7 @@ const messageBox = {
   whiteSpace: 'pre-wrap',
 }
 
-const link = { color: '#9A4A2C' }
+const link = { color: '#BC628C' }
 
 const footer = {
   fontSize: '12px',

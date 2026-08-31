@@ -91,7 +91,7 @@ export function ImageEditor({ imageUrl, onSave, onCancel, previewAspectRatio = 1
     ctx.fillRect(0, sy, sx, sh)
     ctx.fillRect(sx + sw, sy, w - (sx + sw), sh)
 
-    ctx.strokeStyle = '#9A4A2C'
+    ctx.strokeStyle = '#BC628C'
     ctx.lineWidth = 2
     ctx.setLineDash([6, 3])
     ctx.strokeRect(sx, sy, sw, sh)
@@ -106,7 +106,7 @@ export function ImageEditor({ imageUrl, onSave, onCancel, previewAspectRatio = 1
     ]
     corners.forEach((pt) => {
       ctx.fillStyle = '#fff'
-      ctx.strokeStyle = '#9A4A2C'
+      ctx.strokeStyle = '#BC628C'
       ctx.lineWidth = 1.5
       ctx.fillRect(pt.x - handleSize / 2, pt.y - handleSize / 2, handleSize, handleSize)
       ctx.strokeRect(pt.x - handleSize / 2, pt.y - handleSize / 2, handleSize, handleSize)
@@ -330,14 +330,14 @@ export function ImageEditor({ imageUrl, onSave, onCancel, previewAspectRatio = 1
                 <button
                   type="button"
                   onClick={() => setFlipH((prev) => !prev)}
-                  style={{ ...btnStyle, background: flipH ? '#9A4A2C' : undefined, color: flipH ? '#fff' : undefined }}
+                  style={{ ...btnStyle, background: flipH ? '#BC628C' : undefined, color: flipH ? '#fff' : undefined }}
                 >
                   ↔ Horizontal
                 </button>
                 <button
                   type="button"
                   onClick={() => setFlipV((prev) => !prev)}
-                  style={{ ...btnStyle, background: flipV ? '#9A4A2C' : undefined, color: flipV ? '#fff' : undefined }}
+                  style={{ ...btnStyle, background: flipV ? '#BC628C' : undefined, color: flipV ? '#fff' : undefined }}
                 >
                   ↕ Vertical
                 </button>
@@ -359,7 +359,7 @@ export function ImageEditor({ imageUrl, onSave, onCancel, previewAspectRatio = 1
         </div>
 
         {status && (
-          <p style={{ margin: 0, fontSize: '0.85rem', color: processing ? '#C4A574' : '#9A4A2C', textAlign: 'center' }}>
+          <p style={{ margin: 0, fontSize: '0.85rem', color: processing ? '#FB82BA' : '#BC628C', textAlign: 'center' }}>
             {status}
           </p>
         )}

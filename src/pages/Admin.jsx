@@ -1410,8 +1410,8 @@ export function Admin() {
             {draftProduct.images.length > 0 && (
               <div style={{ display: 'grid', gap: 12 }}>
                 {draftProduct.images.map((url, idx) => (
-                  <div key={url} style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px solid rgba(154,74,44,0.15)', borderRadius: 6, background: 'rgba(255,252,249,0.5)' }}>
-                    <img src={url} alt={`photo ${idx + 1}`} style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(154,74,44,0.2)' }} />
+                  <div key={url} style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px solid rgba(188,98,140,0.15)', borderRadius: 6, background: 'rgba(255,252,249,0.5)' }}>
+                    <img src={url} alt={`photo ${idx + 1}`} style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(188,98,140,0.2)' }} />
                     <div style={{ flex: 1 }}>
                       <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>Photo {idx + 1} of {draftProduct.images.length}</p>
                     </div>
@@ -1465,7 +1465,7 @@ export function Admin() {
             )}
 
             {/* Variant Management */}
-            <div style={{ paddingTop: 12, borderTop: '1px solid rgba(154,74,44,0.1)' }}>
+            <div style={{ paddingTop: 12, borderTop: '1px solid rgba(188,98,140,0.1)' }}>
               <label className="form-field-label">Product Variants (e.g., Size, Color, Fabric) — Optional
                 <p style={{ marginTop: 6, marginBottom: 12, fontSize: '0.85rem', color: '#666', fontWeight: 400 }}>
                   Add selection options so customers can choose configurations without emailing you.
@@ -1474,7 +1474,7 @@ export function Admin() {
               {draftProduct.variants && draftProduct.variants.length > 0 && (
                 <div style={{ display: 'grid', gap: 12, marginBottom: 12 }}>
                   {draftProduct.variants.map((variant, vIdx) => (
-                    <div key={vIdx} style={{ border: '1px solid rgba(154,74,44,0.2)', borderRadius: 8, padding: 10, background: 'rgba(255,252,249,0.8)' }}>
+                    <div key={vIdx} style={{ border: '1px solid rgba(188,98,140,0.2)', borderRadius: 8, padding: 10, background: 'rgba(255,252,249,0.8)' }}>
                       <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 8 }}>
                         <label style={{ flex: 1 }}>Variant ID (e.g., "size", "color"): <input className="text-input" value={variant.id || ''} onChange={(e) => setDraftProduct((prev) => ({ ...prev, variants: prev.variants.map((v, i) => i === vIdx ? { ...v, id: e.target.value } : v) }))} /></label>
                         <label style={{ flex: 1 }}>Label (display name): <input className="text-input" value={variant.label || ''} onChange={(e) => setDraftProduct((prev) => ({ ...prev, variants: prev.variants.map((v, i) => i === vIdx ? { ...v, label: e.target.value } : v) }))} /></label>
@@ -1484,7 +1484,7 @@ export function Admin() {
                       </div>
                       {/* Options for this variant */}
                       {variant.options && variant.options.length > 0 && (
-                        <div style={{ display: 'grid', gap: 6, marginBottom: 8, paddingLeft: 8, borderLeft: '3px solid rgba(154,74,44,0.15)' }}>
+                        <div style={{ display: 'grid', gap: 6, marginBottom: 8, paddingLeft: 8, borderLeft: '3px solid rgba(188,98,140,0.15)' }}>
                           {variant.options.map((option, oIdx) => (
                             <div key={oIdx} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', flexWrap: 'wrap' }}>
                               <input className="text-input" placeholder="Value" value={option.value || ''} onChange={(e) => setDraftProduct((prev) => ({ ...prev, variants: prev.variants.map((v, i) => i === vIdx ? { ...v, options: v.options.map((o, j) => j === oIdx ? { ...o, value: e.target.value } : o) } : v) }))} style={{ flex: 1, minWidth: 80 }} />
@@ -1508,7 +1508,7 @@ export function Admin() {
                               {variant.type === 'swatches' && (
                                 <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
                                   <input type="color" value={option.color || '#999999'} onChange={(e) => setDraftProduct((prev) => ({ ...prev, variants: prev.variants.map((v, i) => i === vIdx ? { ...v, options: v.options.map((o, j) => j === oIdx ? { ...o, color: e.target.value } : o) } : v) }))} style={{ width: 40, height: 32, borderRadius: 4, cursor: 'pointer', border: 'none' }} title="Solid color swatch" />
-                                  <label style={{ fontSize: '0.75rem', cursor: 'pointer', padding: '6px 8px', border: '1px solid rgba(154,74,44,0.2)', borderRadius: 4, background: 'white' }}>
+                                  <label style={{ fontSize: '0.75rem', cursor: 'pointer', padding: '6px 8px', border: '1px solid rgba(188,98,140,0.2)', borderRadius: 4, background: 'white' }}>
                                     Upload Swatch Image
                                     <input 
                                       type="file" 
@@ -1582,7 +1582,7 @@ export function Admin() {
                 grouped[cat].push(p)
               }
               return Object.entries(grouped).map(([cat, prods]) => (
-                <details key={cat} open style={{ marginBottom: 4, borderBottom: '1px solid rgba(154,74,44,0.1)' }}>
+                <details key={cat} open style={{ marginBottom: 4, borderBottom: '1px solid rgba(188,98,140,0.1)' }}>
                   <summary style={{ cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem', padding: '8px 2px', userSelect: 'none' }}>
                     {cat} <span style={{ fontWeight: 400, color: '#999', fontSize: '0.82rem' }}>({prods.length})</span>
                   </summary>
@@ -1593,12 +1593,12 @@ export function Admin() {
                       <article key={product.id} className={`cart-row${editingProductId === product.id ? ' cart-row-editing' : ''}`}>
                         <div>
                           <strong>{product.name}</strong>
-                          {product.featured && <span style={{ marginLeft: 8, fontSize: '0.75rem', color: '#9A4A2C', fontWeight: 600 }}>Featured</span>}
+                          {product.featured && <span style={{ marginLeft: 8, fontSize: '0.75rem', color: '#BC628C', fontWeight: 600 }}>Featured</span>}
                           {visibilityLabel === 'Draft' && (
                             <span style={{ marginLeft: 8, fontSize: '0.75rem', color: '#888', fontWeight: 600 }}>Draft</span>
                           )}
                           {visibilityLabel === 'Scheduled' && (
-                            <span style={{ marginLeft: 8, fontSize: '0.75rem', color: '#A68968', fontWeight: 600 }}>
+                            <span style={{ marginLeft: 8, fontSize: '0.75rem', color: '#C9A6B6', fontWeight: 600 }}>
                               Scheduled{product.liveAt ? ` · ${formatProductLiveAt(product.liveAt)}` : ''}
                             </span>
                           )}
@@ -1748,7 +1748,7 @@ export function Admin() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: 12 }}>
                 {(galleryDraft.images || []).map((url, idx) => (
                   <div key={`${url}-${idx}`} style={{ position: 'relative' }}>
-                    <img src={url} alt={`gallery preview ${idx + 1}`} style={{ width: '100%', height: 120, objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(154,74,44,0.2)' }} />
+                    <img src={url} alt={`gallery preview ${idx + 1}`} style={{ width: '100%', height: 120, objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(188,98,140,0.2)' }} />
                     <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
                       <button
                         type="button"
@@ -1795,7 +1795,7 @@ export function Admin() {
               {galleryItems.map((item) => (
                 <article key={item.id} className={`cart-row${editingGalleryId === item.id ? ' cart-row-editing' : ''}`}>
                   <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-                    {item.image && <img src={item.image} alt={item.title} style={{ width: 56, height: 56, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(154,74,44,0.2)' }} />}
+                    {item.image && <img src={item.image} alt={item.title} style={{ width: 56, height: 56, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(188,98,140,0.2)' }} />}
                     <div>
                       <strong>{item.title} {item.pinned && <span style={{ fontSize: '0.75rem', color: 'var(--brand-primary)' }}>(Pinned)</span>}</strong>
                       <p>{item.type}</p>
@@ -1889,7 +1889,7 @@ export function Admin() {
             const anim = settings.siteAnimation || {}
             const setAnim = (patch) => saveSettings({ siteAnimation: { ...anim, ...patch } })
             return (
-              <div style={{ display: 'grid', gap: 10, padding: '14px 16px', border: '1px solid rgba(154,74,44,0.15)', borderRadius: 8, background: 'rgba(154,74,44,0.03)' }}>
+              <div style={{ display: 'grid', gap: 10, padding: '14px 16px', border: '1px solid rgba(188,98,140,0.15)', borderRadius: 8, background: 'rgba(188,98,140,0.03)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <p style={{ margin: 0, fontWeight: 600, fontSize: '0.92rem' }}>Site Animation</p>
                   <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', fontSize: '0.88rem' }}>
@@ -1953,16 +1953,16 @@ export function Admin() {
 
             <div style={{ display: 'grid', gap: 10 }}>
               {heroImages.length === 0 ? (
-                <div style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px dashed rgba(154,74,44,0.25)', borderRadius: 6, background: 'rgba(154,74,44,0.03)' }}>
-                  <img src="/laney.jpg" alt="default hero" style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(154,74,44,0.15)', flexShrink: 0 }} />
+                <div style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px dashed rgba(188,98,140,0.25)', borderRadius: 6, background: 'rgba(188,98,140,0.03)' }}>
+                  <img src="/laney.jpg" alt="default hero" style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(188,98,140,0.15)', flexShrink: 0 }} />
                   <p style={{ margin: 0, fontSize: '0.85rem', color: '#888', flex: 1 }}>
                     Default photo — upload an image below to replace it
                   </p>
                 </div>
               ) : (
                 heroImages.map((url, idx) => (
-                  <div key={url} style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px solid rgba(154,74,44,0.15)', borderRadius: 6, background: 'rgba(255,252,249,0.5)' }}>
-                    <img src={url} alt={`hero ${idx + 1}`} style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(154,74,44,0.2)', flexShrink: 0 }} />
+                  <div key={url} style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 12px', border: '1px solid rgba(188,98,140,0.15)', borderRadius: 6, background: 'rgba(255,252,249,0.5)' }}>
+                    <img src={url} alt={`hero ${idx + 1}`} style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 4, border: '1px solid rgba(188,98,140,0.2)', flexShrink: 0 }} />
                     <p style={{ margin: 0, fontSize: '0.9rem', color: '#666', flex: 1 }}>
                       Image {idx + 1} of {heroImages.length}
                       {heroImages.length > 1 && idx === 0 && <span style={{ marginLeft: 8, fontSize: '0.75rem', color: 'var(--brand-sage)' }}>shown first</span>}
@@ -2685,8 +2685,8 @@ export function Admin() {
                             fontWeight: 600,
                             padding: '2px 6px',
                             borderRadius: 4,
-                            background: 'rgba(154,74,44,0.12)',
-                            color: '#9A4A2C',
+                            background: 'rgba(188,98,140,0.12)',
+                            color: '#BC628C',
                             verticalAlign: 'middle',
                           }}
                         >
@@ -2738,7 +2738,7 @@ export function Admin() {
                       <button
                         type="button"
                         className="ghost-btn"
-                        style={{ fontSize: '0.82rem', whiteSpace: 'nowrap', borderColor: 'rgba(154,74,44,0.55)', color: '#9A4A2C' }}
+                        style={{ fontSize: '0.82rem', whiteSpace: 'nowrap', borderColor: 'rgba(188,98,140,0.55)', color: '#BC628C' }}
                         onClick={async () => {
                           const hasPhotos = collectOrderNoteImageUrls(order).length > 0
                           const confirmed = window.confirm(
@@ -2769,7 +2769,7 @@ export function Admin() {
                             <button
                               type="button"
                               className="ghost-btn"
-                              style={{ fontSize: '0.82rem', whiteSpace: 'nowrap', borderColor: 'rgba(154,74,44,0.4)' }}
+                              style={{ fontSize: '0.82rem', whiteSpace: 'nowrap', borderColor: 'rgba(188,98,140,0.4)' }}
                               onClick={async () => {
                                 await updateOrder(order.id, { archived: true })
                                 refreshOrders()
@@ -2821,7 +2821,7 @@ export function Admin() {
                       <p style={{ margin: '0 0 8px', fontWeight: 600, fontSize: '0.88rem' }}>Items</p>
                       <div style={{ display: 'grid', gap: 6 }}>
                         {orderDraft.items.map((item, idx) => (
-                          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 72px 90px auto', gap: 8, alignItems: 'center', padding: '6px 8px', background: 'rgba(154,74,44,0.04)', borderRadius: 4 }}>
+                          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 72px 90px auto', gap: 8, alignItems: 'center', padding: '6px 8px', background: 'rgba(188,98,140,0.04)', borderRadius: 4 }}>
                             <input className="text-input" placeholder="Item name" value={item.name || ''} onChange={(e) => setOrderDraft((p) => ({ ...p, items: p.items.map((it, i) => i === idx ? { ...it, name: e.target.value } : it) }))} />
                             <label style={{ display: 'flex', flexDirection: 'column', gap: 2, fontSize: '0.75rem', color: '#888' }}>
                               Qty
@@ -2898,7 +2898,7 @@ export function Admin() {
                     <p style={{ margin: '0 0 6px', fontWeight: 600, fontSize: '0.9rem' }}>Items</p>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
                       <thead>
-                        <tr style={{ background: 'rgba(154,74,44,0.08)' }}>
+                        <tr style={{ background: 'rgba(188,98,140,0.08)' }}>
                           <th style={{ textAlign: 'left', padding: '4px 8px', fontWeight: 600 }}>Item</th>
                           <th style={{ textAlign: 'center', padding: '4px 8px', fontWeight: 600, whiteSpace: 'nowrap' }}>Qty</th>
                           <th style={{ textAlign: 'right', padding: '4px 8px', fontWeight: 600, whiteSpace: 'nowrap' }}>Price</th>
@@ -2909,7 +2909,7 @@ export function Admin() {
                           const variants = formatSelectedVariants(item.selectedVariants, item.variants)
                           const addOns = item.addOns || []
                           return (
-                            <tr key={idx} style={{ borderTop: '1px solid rgba(154,74,44,0.1)' }}>
+                            <tr key={idx} style={{ borderTop: '1px solid rgba(188,98,140,0.1)' }}>
                               <td style={{ padding: '5px 8px', verticalAlign: 'top' }}>
                                 <span style={{ fontWeight: 500 }}>{item.name}</span>
                                 {variants.length > 0 && (
@@ -2943,12 +2943,12 @@ export function Admin() {
                         <div style={{ color: '#666' }}>Subtotal: ${Number(order.subtotal).toFixed(2)}</div>
                       )}
                       {order.discount?.amount > 0 && (
-                        <div style={{ color: '#9A4A2C' }}>
+                        <div style={{ color: '#BC628C' }}>
                           Coupon ({order.discount.code}): −${Number(order.discount.amount).toFixed(2)}
                         </div>
                       )}
                       {(order.giftCard?.amount > 0 || order.giftCardAmount > 0) && (
-                        <div style={{ color: '#9A4A2C' }}>
+                        <div style={{ color: '#BC628C' }}>
                           Gift card ({order.giftCard?.code || 'applied'}): −$
                           {Number(order.giftCard?.amount ?? order.giftCardAmount).toFixed(2)}
                           {order.giftCard?.remainingAfter != null && (
@@ -2998,7 +2998,7 @@ export function Admin() {
                 {order.noteImage && (
                   <div style={{ marginTop: 12, marginBottom: 12 }}>
                     <p style={{ margin: '0 0 8px 0', fontSize: '0.9rem', fontWeight: 600 }}>Customer Photo:</p>
-                    <img src={order.noteImage} alt="Customer note" style={{ maxWidth: '100%', maxHeight: 300, borderRadius: 4, border: '1px solid rgba(154,74,44,0.2)' }} />
+                    <img src={order.noteImage} alt="Customer note" style={{ maxWidth: '100%', maxHeight: 300, borderRadius: 4, border: '1px solid rgba(188,98,140,0.2)' }} />
                   </div>
                 )}
                 {order.noteImages?.length > 0 && (
@@ -3007,7 +3007,7 @@ export function Admin() {
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                       {order.noteImages.map((url, i) => (
                         <a key={i} href={url} target="_blank" rel="noreferrer">
-                          <img src={url} alt={`Customer photo ${i + 1}`} style={{ maxWidth: 200, maxHeight: 200, borderRadius: 4, border: '1px solid rgba(154,74,44,0.2)', objectFit: 'cover' }} />
+                          <img src={url} alt={`Customer photo ${i + 1}`} style={{ maxWidth: 200, maxHeight: 200, borderRadius: 4, border: '1px solid rgba(188,98,140,0.2)', objectFit: 'cover' }} />
                         </a>
                       ))}
                     </div>

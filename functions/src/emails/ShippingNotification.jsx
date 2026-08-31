@@ -85,9 +85,9 @@ const headerRow = {
 }
 
 const brandScript = {
-  fontFamily: '"Cormorant Garamond", Georgia, serif',
+  fontFamily: '"Nunito Sans", Helvetica, Arial, sans-serif',
   fontSize: '28px',
-  color: '#9A4A2C',
+  color: '#BC628C',
   lineHeight: 1,
 }
 
@@ -109,7 +109,7 @@ const brandBold = {
 }
 
 const heading = {
-  color: '#9A4A2C',
+  color: '#BC628C',
   fontSize: '26px',
   fontWeight: '700',
   margin: '0 0 12px',
@@ -165,7 +165,7 @@ const trackingNumberStyle = {
 
 const hr = { borderColor: '#f0d9e3', margin: '28px 0', border: '1px solid #f0d9e3' }
 
-const link = { color: '#9A4A2C' }
+const link = { color: '#BC628C' }
 
 const footer = {
   fontSize: '13px',

@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap');
 
 :root {
-  --brand-primary: #9A4A2C;
-  --brand-light-pink: #F5E8DC;
-  --brand-sage: #A68968;
-  --brand-sage-logo: #C4A574;
-  --brand-cream: #FAF6F1;
-  --brand-bright-pink: #E8B896;
-  --brand-dark: #2A1810;
+  /* Matched to 806andcompany.com Wix theme (color_16–20 / action color_18) */
+  --brand-primary: #BC628C;
+  --brand-light-pink: #FDC0DC;
+  --brand-sage: #C9A6B6;
+  --brand-sage-logo: #FB82BA;
+  --brand-cream: #FFF8FB;
+  --brand-bright-pink: #FB82BA;
+  --brand-dark: #242323;
+  --brand-deep: #3F212F;
+  --brand-muted: #757575;
+  --brand-gray: #E8E6E6;
 
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
-  --shadow-soft: 0 14px 30px rgba(154, 74, 44, 0.12);
+  --shadow-soft: 0 14px 30px rgba(188, 98, 140, 0.14);
 }
 
 * {
@@ -21,7 +25,7 @@
 
 body {
   margin: 0;
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--brand-dark);
   background-color: var(--brand-cream);
   overflow-x: hidden;
@@ -53,19 +57,19 @@ a {
 
 /* Section 1 — vertical stripes */
 .page-bg-stripes {
-  background-color: #FAF6F1;
+  background-color: #FFF8FB;
   background-image: repeating-linear-gradient(
     90deg,
-    rgba(245, 232, 220, 0.96) 0px,
-    rgba(245, 232, 220, 0.96) 30px,
-    rgba(236, 214, 196, 0.9) 30px,
-    rgba(236, 214, 196, 0.9) 60px,
-    rgba(250, 240, 230, 0.9) 60px,
-    rgba(250, 240, 230, 0.9) 90px,
-    rgba(232, 200, 176, 0.88) 90px,
-    rgba(232, 200, 176, 0.88) 120px,
-    rgba(245, 226, 210, 0.94) 120px,
-    rgba(245, 226, 210, 0.94) 150px
+    rgba(253, 192, 220, 0.55) 0px,
+    rgba(253, 192, 220, 0.55) 30px,
+    rgba(251, 207, 227, 0.5) 30px,
+    rgba(251, 207, 227, 0.5) 60px,
+    rgba(255, 248, 251, 0.9) 60px,
+    rgba(255, 248, 251, 0.9) 90px,
+    rgba(252, 212, 231, 0.5) 90px,
+    rgba(252, 212, 231, 0.5) 120px,
+    rgba(253, 192, 220, 0.4) 120px,
+    rgba(253, 192, 220, 0.4) 150px
   );
 }
 
@@ -81,7 +85,7 @@ a {
   gap: 24px;
   padding: 0 48px;
   height: 72px;
-  background: rgba(250, 246, 241, 0.92);
+  background: rgba(255, 248, 251, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: box-shadow 0.25s ease;
@@ -99,9 +103,9 @@ a {
   height: 20px;
   background-image: radial-gradient(
     circle at 50% 0%,
-    rgba(250, 246, 241, 0.95) 17px,
-    rgba(154, 74, 44, 0.22) 17px,
-    rgba(154, 74, 44, 0.22) 18.5px,
+    rgba(255, 248, 251, 0.95) 17px,
+    rgba(188, 98, 140, 0.22) 17px,
+    rgba(188, 98, 140, 0.22) 18.5px,
     transparent 19px
   );
   background-size: 38px 20px;
@@ -110,7 +114,7 @@ a {
 }
 
 .site-header--scrolled {
-  box-shadow: 0 2px 24px rgba(154, 74, 44, 0.1);
+  box-shadow: 0 2px 24px rgba(188, 98, 140, 0.1);
 }
 
 .brand-link {
@@ -122,24 +126,25 @@ a {
 
 .brand-script {
   color: var(--brand-primary);
-  font-size: 1.85rem;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 600;
+  font-size: 1.65rem;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .brand-and {
   color: var(--brand-sage-logo);
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .brand-bold {
-  color: var(--brand-primary);
-  font-size: 1.4rem;
+  color: var(--brand-deep);
+  font-size: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-weight: 800;
 }
 
 .site-nav {
@@ -155,7 +160,7 @@ a {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   position: relative;
   padding-bottom: 2px;
@@ -209,16 +214,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .header-signin {
-  border: 1px solid rgba(154, 74, 44, 0.5);
+  border: 1px solid rgba(188, 98, 140, 0.5);
   border-radius: 2px;
   padding: 8px 18px;
   background: transparent;
   color: var(--brand-primary);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -260,9 +265,9 @@ a {
   top: 72px;
   left: 0;
   right: 0;
-  background: rgba(250, 246, 241, 0.98);
+  background: rgba(255, 248, 251, 0.98);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(154, 74, 44, 0.1);
+  border-bottom: 1px solid rgba(188, 98, 140, 0.1);
   display: flex;
   flex-direction: column;
   padding: 16px 0 24px;
@@ -273,7 +278,7 @@ a {
 .mobile-nav-item {
   text-decoration: none;
   color: var(--brand-dark);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -290,7 +295,7 @@ a {
 .chip,
 .primary-btn,
 .ghost-btn {
-  border: 1px solid rgba(154, 74, 44, 0.3);
+  border: 1px solid rgba(188, 98, 140, 0.3);
   border-radius: 999px;
   padding: 8px 14px;
   text-decoration: none;
@@ -298,7 +303,7 @@ a {
   color: var(--brand-primary);
   cursor: pointer;
   transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -340,14 +345,14 @@ a {
 }
 
 .login-pill {
-  border: 1px solid rgba(154, 74, 44, 0.3);
+  border: 1px solid rgba(188, 98, 140, 0.3);
   border-radius: 999px;
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.75);
   color: var(--brand-primary);
   cursor: pointer;
   transition: transform 160ms ease, background-color 160ms ease;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   white-space: nowrap;
@@ -378,7 +383,7 @@ a {
 
 .profile-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(154, 74, 44, 0.2);
+  box-shadow: 0 4px 12px rgba(188, 98, 140, 0.2);
 }
 
 .profile-photo {
@@ -398,10 +403,10 @@ a {
   top: 100%;
   right: 0;
   margin-top: 8px;
-  background: rgba(250, 246, 241, 0.98);
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  background: rgba(255, 248, 251, 0.98);
+  border: 1px solid rgba(188, 98, 140, 0.2);
   border-radius: var(--radius-md);
-  box-shadow: 0 8px 24px rgba(154, 74, 44, 0.15);
+  box-shadow: 0 8px 24px rgba(188, 98, 140, 0.15);
   min-width: 200px;
   z-index: 1000;
 }
@@ -419,13 +424,13 @@ a {
 .profile-email {
   margin: 4px 0 0;
   font-size: 0.85rem;
-  color: rgba(154, 74, 44, 0.7);
+  color: rgba(188, 98, 140, 0.7);
 }
 
 .profile-dropdown hr {
   margin: 8px 0;
   border: none;
-  border-top: 1px solid rgba(154, 74, 44, 0.1);
+  border-top: 1px solid rgba(188, 98, 140, 0.1);
 }
 
 .dropdown-item {
@@ -437,7 +442,7 @@ a {
   color: var(--brand-primary);
   text-align: left;
   cursor: pointer;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   transition: background-color 160ms ease;
 }
 
@@ -461,13 +466,13 @@ a {
 .content-page,
 .cart-row {
   border-radius: var(--radius-md);
-  border: 1px solid rgba(154, 74, 44, 0.15);
-  background: rgba(250, 246, 241, 0.92);
+  border: 1px solid rgba(188, 98, 140, 0.15);
+  background: rgba(255, 248, 251, 0.92);
   box-shadow: var(--shadow-soft);
 }
 .cart-row-editing {
   border-color: var(--brand-primary);
-  background: rgba(154, 74, 44, 0.04);
+  background: rgba(188, 98, 140, 0.04);
 }
 
 .eyebrow {
@@ -528,7 +533,7 @@ h1 {
   text-align: center;
   width: 100%;
   padding: 9px 12px;
-  border: 1px solid rgba(154, 74, 44, 0.35);
+  border: 1px solid rgba(188, 98, 140, 0.35);
   border-radius: var(--radius-sm);
   background: white;
   color: var(--brand-primary);
@@ -560,7 +565,7 @@ h1 {
 
 .text-input {
   width: 100%;
-  border: 1px solid rgba(154, 74, 44, 0.25);
+  border: 1px solid rgba(188, 98, 140, 0.25);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
   font: inherit;
@@ -572,7 +577,7 @@ h1 {
 .text-input:focus {
   outline: none;
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px rgba(154, 74, 44, 0.1);
+  box-shadow: 0 0 0 2px rgba(188, 98, 140, 0.1);
 }
 
 .chip-row {
@@ -602,7 +607,7 @@ h1 {
   align-items: center;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(154, 74, 44, 0.1);
+  border-bottom: 1px solid rgba(188, 98, 140, 0.1);
 }
 .category-admin-preview { flex-shrink: 0; }
 .cat-thumb {
@@ -610,7 +615,7 @@ h1 {
   height: 48px;
   border-radius: 8px;
   object-fit: cover;
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
 }
 .cat-thumb-empty {
   display: flex;
@@ -636,7 +641,7 @@ h1 {
   flex-direction: column;
   gap: 8px;
   padding: 14px;
-  border: 1px solid rgba(154, 74, 44, 0.15);
+  border: 1px solid rgba(188, 98, 140, 0.15);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.6);
 }
@@ -651,7 +656,7 @@ h1 {
   height: 72px;
   border-radius: 8px;
   object-fit: cover;
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
   flex-shrink: 0;
 }
 .craft-card-thumb-empty {
@@ -748,7 +753,7 @@ h1 {
 
 .detail-description {
   padding-top: 16px;
-  border-top: 1px solid rgba(154, 74, 44, 0.1);
+  border-top: 1px solid rgba(188, 98, 140, 0.1);
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--brand-dark);
@@ -777,8 +782,8 @@ h1 {
   flex-direction: column;
   gap: 14px;
   padding: 12px 0;
-  border-top: 1px solid rgba(154, 74, 44, 0.1);
-  border-bottom: 1px solid rgba(154, 74, 44, 0.1);
+  border-top: 1px solid rgba(188, 98, 140, 0.1);
+  border-bottom: 1px solid rgba(188, 98, 140, 0.1);
 }
 
 .variant-group {
@@ -801,7 +806,7 @@ h1 {
 
 .variant-btn {
   padding: 8px 14px;
-  border: 1px solid rgba(154, 74, 44, 0.3);
+  border: 1px solid rgba(188, 98, 140, 0.3);
   border-radius: var(--radius-sm);
   background: white;
   color: var(--brand-dark);
@@ -812,7 +817,7 @@ h1 {
 
 .variant-btn:hover {
   border-color: var(--brand-primary);
-  background: rgba(154, 74, 44, 0.05);
+  background: rgba(188, 98, 140, 0.05);
 }
 
 .variant-btn--selected {
@@ -881,14 +886,14 @@ h1 {
   height: 120px;
   border-radius: 4px;
   object-fit: cover;
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
 }
 
 .swatch-zoom-color {
   width: 120px;
   height: 120px;
   border-radius: 4px;
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
 }
 
 .swatch-zoom-label {
@@ -902,7 +907,7 @@ h1 {
 
 .variant-select {
   padding: 8px 12px;
-  border: 1px solid rgba(154, 74, 44, 0.3);
+  border: 1px solid rgba(188, 98, 140, 0.3);
   border-radius: var(--radius-sm);
   background: white;
   color: var(--brand-dark);
@@ -915,7 +920,7 @@ h1 {
 .variant-select:focus {
   outline: none;
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px rgba(154, 74, 44, 0.1);
+  box-shadow: 0 0 0 2px rgba(188, 98, 140, 0.1);
 }
 
 .stack-list {
@@ -930,7 +935,7 @@ h1 {
 .panel-editing {
   outline: 2px solid var(--brand-primary);
   outline-offset: 2px;
-  background: rgba(154, 74, 44, 0.04);
+  background: rgba(188, 98, 140, 0.04);
 }
 
 .qty-wrap,
@@ -945,7 +950,7 @@ h1 {
 .qty-input {
   width: 74px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
   padding: 6px;
   font: inherit;
 }
@@ -994,12 +999,12 @@ h1 {
   align-items: center;
   padding: 0 10px;
   height: 100%;
-  background: rgba(154, 74, 44, 0.08);
-  border: 1px solid rgba(154, 74, 44, 0.25);
+  background: rgba(188, 98, 140, 0.08);
+  border: 1px solid rgba(188, 98, 140, 0.25);
   border-right: none;
   border-radius: 4px 0 0 4px;
   color: var(--brand-primary);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 600;
   align-self: stretch;
@@ -1030,7 +1035,7 @@ h1 {
   padding: 20px 16px 28px;
   text-align: center;
   color: var(--brand-primary);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Legal pages */
@@ -1093,10 +1098,10 @@ h1 {
 }
 
 .login-modal-content {
-  background: rgba(250, 246, 241, 0.98);
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  background: rgba(255, 248, 251, 0.98);
+  border: 1px solid rgba(188, 98, 140, 0.2);
   border-radius: var(--radius-lg);
-  box-shadow: 0 16px 48px rgba(154, 74, 44, 0.2);
+  box-shadow: 0 16px 48px rgba(188, 98, 140, 0.2);
   padding: 24px;
   width: 90%;
   max-width: 380px;
@@ -1143,7 +1148,7 @@ h1 {
 }
 
 .password-toggle-btn:hover:not(:disabled) {
-  background: rgba(154, 74, 44, 0.08);
+  background: rgba(188, 98, 140, 0.08);
 }
 
 .password-toggle-btn:disabled {
@@ -1173,7 +1178,7 @@ h1 {
 .login-divider {
   text-align: center;
   margin: 16px 0;
-  color: rgba(154, 74, 44, 0.5);
+  color: rgba(188, 98, 140, 0.5);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -1184,13 +1189,13 @@ h1 {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  border: 1px solid rgba(154, 74, 44, 0.3);
+  border: 1px solid rgba(188, 98, 140, 0.3);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.75);
   color: var(--brand-primary);
   cursor: pointer;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   transition: background-color 160ms ease, transform 160ms ease;
 }
@@ -1208,7 +1213,7 @@ h1 {
 .login-footer {
   margin-top: 16px;
   font-size: 0.85rem;
-  color: rgba(154, 74, 44, 0.7);
+  color: rgba(188, 98, 140, 0.7);
   text-align: center;
 }
 
@@ -1234,7 +1239,7 @@ h1 {
 ───────────────────────────────────────────── */
 .about-page {
   background: var(--brand-cream);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Hero */
@@ -1244,7 +1249,7 @@ h1 {
   background: var(--brand-cream);
 }
 .about-hero-eyebrow {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1252,7 +1257,7 @@ h1 {
   margin-bottom: 20px;
 }
 .about-hero-title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   color: var(--brand-primary);
   line-height: 1.15;
@@ -1307,7 +1312,7 @@ h1 {
   margin-bottom: 20px;
 }
 .about-story-heading {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 600;
   color: var(--brand-dark);
@@ -1332,7 +1337,7 @@ h1 {
   text-align: center;
 }
 .about-quote {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
   color: #fff;
   line-height: 1.5;
@@ -1349,7 +1354,7 @@ h1 {
   text-align: left;
 }
 .about-craft-heading {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   color: var(--brand-dark);
@@ -1377,7 +1382,7 @@ h1 {
   margin-bottom: 20px;
 }
 .about-craft-card h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--brand-primary);
@@ -1397,7 +1402,7 @@ h1 {
   text-align: center;
 }
 .about-cta-sub {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   color: var(--brand-dark);
   margin-bottom: 28px;
@@ -1407,7 +1412,7 @@ h1 {
   display: inline-block;
   background: var(--brand-primary);
   color: #fff;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1456,7 +1461,7 @@ h1 {
   background: var(--brand-primary);
   color: #fff;
   text-decoration: none;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1493,7 +1498,7 @@ h1 {
   animation: marquee 30s linear infinite;
 }
 .home-marquee-track span {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1526,10 +1531,10 @@ h1 {
   text-transform: uppercase;
   color: var(--brand-sage);
   margin-bottom: 20px;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .home-intro-heading {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 700;
   color: var(--brand-dark);
@@ -1543,7 +1548,7 @@ h1 {
   margin: 0 0 28px;
 }
 .home-text-link {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   color: var(--brand-primary);
@@ -1560,11 +1565,11 @@ h1 {
   gap: 40px;
 }
 .home-craft-item {
-  border-top: 1px solid rgba(154, 74, 44, 0.2);
+  border-top: 1px solid rgba(188, 98, 140, 0.2);
   padding-top: 28px;
 }
 .home-craft-num {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   color: var(--brand-sage);
@@ -1572,7 +1577,7 @@ h1 {
   margin-bottom: 10px;
 }
 .home-craft-item h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--brand-primary);
@@ -1599,7 +1604,7 @@ h1 {
   margin-bottom: 48px;
 }
 .home-section-heading {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
   color: var(--brand-dark);
@@ -1650,8 +1655,8 @@ h1 {
 }
 
 .gallery-card {
-  background: rgba(250, 246, 241, 0.9);
-  border: 1px solid rgba(154, 74, 44, 0.14);
+  background: rgba(255, 248, 251, 0.9);
+  border: 1px solid rgba(188, 98, 140, 0.14);
   box-shadow: var(--shadow-soft);
 }
 
@@ -1760,8 +1765,8 @@ h1 {
   gap: 14px;
   padding: 18px;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(154, 74, 44, 0.16);
-  background: rgba(250, 246, 241, 0.86);
+  border: 1px solid rgba(188, 98, 140, 0.16);
+  background: rgba(255, 248, 251, 0.86);
   box-shadow: var(--shadow-soft);
 }
 
@@ -1813,8 +1818,8 @@ h1 {
   gap: 10px;
   padding: 12px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(154, 74, 44, 0.2);
-  background: rgba(250, 246, 241, 0.9);
+  border: 1px solid rgba(188, 98, 140, 0.2);
+  background: rgba(255, 248, 251, 0.9);
   color: var(--brand-dark);
   text-decoration: none;
   letter-spacing: 0.08em;
@@ -1826,8 +1831,8 @@ h1 {
 
 .home-social-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(154, 74, 44, 0.45);
-  box-shadow: 0 10px 22px rgba(154, 74, 44, 0.16);
+  border-color: rgba(188, 98, 140, 0.45);
+  box-shadow: 0 10px 22px rgba(188, 98, 140, 0.16);
 }
 
 .home-social-link svg {
@@ -1841,8 +1846,8 @@ h1 {
   align-items: center;
   gap: 16px;
   padding: 24px;
-  background: rgba(250, 246, 241, 0.95);
-  border: 1px solid rgba(154, 74, 44, 0.15);
+  background: rgba(255, 248, 251, 0.95);
+  border: 1px solid rgba(188, 98, 140, 0.15);
   border-radius: var(--radius-md);
   text-decoration: none;
   color: var(--brand-dark);
@@ -1881,13 +1886,13 @@ h1 {
   margin: 0;
   font-size: 0.85rem;
   color: var(--brand-sage);
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .home-facebook-follow-btn {
   flex-shrink: 0;
   background: #1877F2;
   color: #fff;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -1899,7 +1904,7 @@ h1 {
 .instagram-feed-frame {
   width: 100%;
   min-height: 560px;
-  border: 1px solid rgba(154, 74, 44, 0.16);
+  border: 1px solid rgba(188, 98, 140, 0.16);
   border-radius: 10px;
   background: #fff;
 }
@@ -1918,9 +1923,9 @@ h1 {
   display: grid;
   gap: 14px;
   padding: 20px;
-  border: 1px solid rgba(154, 74, 44, 0.16);
+  border: 1px solid rgba(188, 98, 140, 0.16);
   border-radius: var(--radius-md);
-  background: rgba(250, 246, 241, 0.88);
+  background: rgba(255, 248, 251, 0.88);
   box-shadow: var(--shadow-soft);
 }
 
@@ -1952,8 +1957,8 @@ h1 {
 
 .home-social-fallback {
   padding: 20px;
-  border: 1px solid rgba(154, 74, 44, 0.16);
-  background: rgba(250, 246, 241, 0.8);
+  border: 1px solid rgba(188, 98, 140, 0.16);
+  background: rgba(255, 248, 251, 0.8);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1974,7 +1979,7 @@ h1 {
   gap: 20px;
   padding: 24px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(250, 246, 241, 0.96), rgba(245, 232, 220, 0.88));
+  background: linear-gradient(135deg, rgba(255, 248, 251, 0.96), rgba(245, 232, 220, 0.88));
   box-shadow: var(--shadow-soft);
 }
 
@@ -1990,7 +1995,7 @@ h1 {
   padding: 18px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(154, 74, 44, 0.12);
+  border: 1px solid rgba(188, 98, 140, 0.12);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
@@ -2021,7 +2026,7 @@ h1 {
   align-items: center;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(154, 74, 44, 0.08);
+  background: rgba(188, 98, 140, 0.08);
   color: var(--brand-primary);
   font-size: 0.72rem;
   font-weight: 700;
@@ -2039,7 +2044,7 @@ h1 {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  background: rgba(154, 74, 44, 0.05);
+  background: rgba(188, 98, 140, 0.05);
   min-height: 140px;
 }
 
@@ -2097,8 +2102,8 @@ h1 {
   gap: 10px;
   padding: 18px;
   border-radius: 20px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(250, 246, 241, 0.96));
-  border: 1px solid rgba(154, 74, 44, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 248, 251, 0.96));
+  border: 1px solid rgba(188, 98, 140, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
@@ -2153,7 +2158,7 @@ h1 {
   text-align: center;
 }
 .home-cta-band-eyebrow {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -2161,7 +2166,7 @@ h1 {
   margin: 0 0 20px;
 }
 .home-cta-band-heading {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
   color: #fff;
   margin: 0 0 36px;
@@ -2172,7 +2177,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: #fff;
   text-decoration: none;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2229,7 +2234,7 @@ h1 {
 
 .footer-nav h4,
 .footer-contact h4 {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -2243,7 +2248,7 @@ h1 {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   font-size: 0.9rem;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   transition: color 0.2s;
 }
 .footer-nav a:hover,
@@ -2261,7 +2266,7 @@ h1 {
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.3);
   letter-spacing: 0.05em;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* ─────────────────────────────────────────────
@@ -2341,7 +2346,7 @@ h1 {
 }
 
 .contact-subhead {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.05rem;
   color: var(--brand-dark);
   max-width: 520px;
@@ -2368,8 +2373,8 @@ h1 {
 
 /* Form */
 .contact-form-wrap {
-  background: rgba(250, 246, 241, 0.95);
-  border: 1px solid rgba(154, 74, 44, 0.15);
+  background: rgba(255, 248, 251, 0.95);
+  border: 1px solid rgba(188, 98, 140, 0.15);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   padding: 36px 32px;
@@ -2416,7 +2421,7 @@ h1 {
 .contact-textarea {
   resize: vertical;
   min-height: 120px;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
 }
 
@@ -2427,7 +2432,7 @@ h1 {
   border: none;
   border-radius: var(--radius-sm);
   padding: 14px 36px;
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -2478,7 +2483,7 @@ h1 {
 }
 
 .contact-success-body {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: var(--brand-dark);
   margin: 0;
@@ -2489,8 +2494,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(154, 74, 44, 0.12);
-  border: 1px solid rgba(154, 74, 44, 0.12);
+  background: rgba(188, 98, 140, 0.12);
+  border: 1px solid rgba(188, 98, 140, 0.12);
   border-radius: var(--radius-md);
   overflow: hidden;
   margin: 0 0 60px;
@@ -2502,7 +2507,7 @@ h1 {
   align-items: flex-start;
   gap: 10px;
   padding: 32px 28px;
-  background: rgba(250, 246, 241, 0.95);
+  background: rgba(255, 248, 251, 0.95);
 }
 
 .contact-info-icon {
@@ -2511,7 +2516,7 @@ h1 {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(154, 74, 44, 0.08);
+  background: rgba(188, 98, 140, 0.08);
   border-radius: 50%;
   font-size: 1.2rem;
   color: var(--brand-primary);
@@ -2534,7 +2539,7 @@ h1 {
 }
 
 .contact-info-body {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.88rem;
   color: var(--brand-sage);
   line-height: 1.55;
@@ -2606,14 +2611,14 @@ h1 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(154, 74, 44, 0.35);
+  box-shadow: 0 4px 16px rgba(188, 98, 140, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   animation: chat-bubble-pulse 2.5s ease-in-out infinite;
@@ -2621,7 +2626,7 @@ h1 {
 
 .chat-bubble:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 22px rgba(154, 74, 44, 0.5);
+  box-shadow: 0 6px 22px rgba(188, 98, 140, 0.5);
   animation: none;
 }
 
@@ -2630,8 +2635,8 @@ h1 {
 }
 
 @keyframes chat-bubble-pulse {
-  0%, 100% { box-shadow: 0 4px 16px rgba(154, 74, 44, 0.35); }
-  50% { box-shadow: 0 4px 24px rgba(154, 74, 44, 0.55); }
+  0%, 100% { box-shadow: 0 4px 16px rgba(188, 98, 140, 0.35); }
+  50% { box-shadow: 0 4px 24px rgba(188, 98, 140, 0.55); }
 }
 
 .chat-bubble-icon {
@@ -2678,7 +2683,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   flex-shrink: 0;
 }
@@ -2811,7 +2816,7 @@ h1 {
 }
 
 .chat-message--visitor .chat-message-bubble {
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   border-bottom-right-radius: 4px;
 }
@@ -2858,14 +2863,14 @@ h1 {
 }
 
 .chat-text-input:focus {
-  border-color: #9A4A2C !important;
+  border-color: #BC628C !important;
 }
 
 .chat-send-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   border: none;
   cursor: pointer;
@@ -2963,8 +2968,8 @@ h1 {
 }
 
 .admin-chat-row--active {
-  border-color: #9A4A2C;
-  box-shadow: 0 0 0 2px rgba(154, 74, 44, 0.15);
+  border-color: #BC628C;
+  box-shadow: 0 0 0 2px rgba(188, 98, 140, 0.15);
 }
 
 .admin-chat-row-top {
@@ -3009,7 +3014,7 @@ h1 {
   min-width: 18px;
   height: 18px;
   border-radius: 9px;
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   font-size: 0.62rem;
   font-weight: 700;
@@ -3023,7 +3028,7 @@ h1 {
   min-width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: #9A4A2C;
+  background: #BC628C;
   color: #fffcf9;
   font-size: 0.66rem;
   font-weight: 700;
@@ -3098,7 +3103,7 @@ h1 {
 ───────────────────────────────────────────── */
 .login-mode-tabs {
   display: flex;
-  border-bottom: 1px solid rgba(154, 74, 44, 0.15);
+  border-bottom: 1px solid rgba(188, 98, 140, 0.15);
   margin-bottom: 16px;
 }
 
@@ -3132,7 +3137,7 @@ h1 {
 .orders-view-tabs {
   display: flex;
   gap: 4px;
-  background: rgba(154, 74, 44, 0.06);
+  background: rgba(188, 98, 140, 0.06);
   border-radius: 8px;
   padding: 3px;
 }
@@ -3168,7 +3173,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  border: 1px solid rgba(154, 74, 44, 0.4);
+  border: 1px solid rgba(188, 98, 140, 0.4);
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--brand-primary);
@@ -3181,7 +3186,7 @@ h1 {
 }
 
 .secondary-btn:hover {
-  background: rgba(154, 74, 44, 0.06);
+  background: rgba(188, 98, 140, 0.06);
 }
 
 /* ─────────────────────────────────────────────
@@ -3238,9 +3243,9 @@ h1 {
 }
 
 .order-card {
-  border: 1px solid rgba(154, 74, 44, 0.15);
+  border: 1px solid rgba(188, 98, 140, 0.15);
   border-radius: var(--radius-md);
-  background: rgba(250, 246, 241, 0.92);
+  background: rgba(255, 248, 251, 0.92);
   padding: 16px;
   box-shadow: var(--shadow-soft);
 }
@@ -3286,7 +3291,7 @@ h1 {
 
 .order-card-toggle {
   padding: 5px 10px;
-  border: 1px solid rgba(154, 74, 44, 0.25);
+  border: 1px solid rgba(188, 98, 140, 0.25);
   border-radius: var(--radius-sm);
   background: none;
   color: var(--brand-primary);
@@ -3297,7 +3302,7 @@ h1 {
 }
 
 .order-card-toggle:hover {
-  background: rgba(154, 74, 44, 0.06);
+  background: rgba(188, 98, 140, 0.06);
 }
 
 .order-card-summary {
@@ -3350,7 +3355,7 @@ h1 {
 .order-card-detail {
   margin-top: 14px;
   padding-top: 14px;
-  border-top: 1px solid rgba(154, 74, 44, 0.1);
+  border-top: 1px solid rgba(188, 98, 140, 0.1);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -3408,7 +3413,7 @@ h1 {
   height: 72px;
   object-fit: cover;
   border-radius: 6px;
-  border: 1px solid rgba(154, 74, 44, 0.2);
+  border: 1px solid rgba(188, 98, 140, 0.2);
 }
 
 .checkout-auth-panel {
@@ -3438,7 +3443,7 @@ h1 {
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(154, 74, 44, 0.12);
+  background: rgba(188, 98, 140, 0.12);
 }
 
 .checkout-guest-btn {
@@ -3460,8 +3465,8 @@ h1 {
 
 /* ── Order confirmation sign-up prompt ── */
 .order-confirm-signup-prompt {
-  background: rgba(154, 74, 44, 0.05);
-  border: 1px solid rgba(154, 74, 44, 0.18);
+  background: rgba(188, 98, 140, 0.05);
+  border: 1px solid rgba(188, 98, 140, 0.18);
   border-radius: var(--radius-md);
   padding: 18px 20px;
   margin: 20px 0 12px;
