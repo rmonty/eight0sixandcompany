@@ -17,6 +17,15 @@ import { calculateMileageDeliveryFee, quoteDeliveryMiles } from './delivery.js'
 import { getCouponScheduleError } from './couponValidity.js'
 import { getGiftCardAvailabilityError, normalizeGiftCardCode, normalizeMoney } from './giftCards.js'
 import { archiveNotionPage, getNotionPage, pushOrderToNotion, readRichTextProperty, readSelectProperty, updateNotionPage } from './notion.js'
+import {
+  appointmentDocId,
+  buildSlotsForDate,
+  monthDateKeys,
+  normalizeBookingConfig,
+  summarizeMonthAvailability,
+  toDateKey,
+  validateBookingSlot,
+} from './booking.js'
 
 const resendApiKey = defineSecret('RESEND_API_KEY')
 const ga4ClientId = defineSecret('GA4_CLIENT_ID')
@@ -719,6 +728,42 @@ export const claimGuestOrders = onCall(
   },
 )
 
+export const getBookingAvailability = onCall(
+  { invoker: 'public' },
+  async (request) => {
+    const { productId, year, month } = request.data ?? {}
+    if (!productId || !year || !month) {
+      throw new HttpsError('invalid-argument', 'productId, year, and month are required.')
+    }
+
+    const db = getFirestore()
+    const productSnap = await db.collection('products').doc(String(productId)).get()
+    if (!productSnap.exists) {
+      throw new HttpsError('not-found', 'Product not found.')
+    }
+
+    const product = productSnap.data() || {}
+    const booking = normalizeBookingConfig(product.booking)
+    if (!booking.enabled) {
+      return { booking, days: {}, slots: {} }
+    }
+
+    const monthIndex0 = Number(month) - 1
+    const dateKeys = monthDateKeys(Number(year), monthIndex0)
+    const monthStart = new Date(Number(year), monthIndex0, 1).getTime()
+    const monthEnd = new Date(Number(year), monthIndex0 + 1, 0, 23, 59, 59, 999).getTime()
+
+    const apptSnap = await db.collection('appointments').where('productId', '==', String(productId)).get()
+    const bookedRanges = apptSnap.docs
+      .map((docSnap) => docSnap.data() || {})
+      .filter((row) => row.startAt >= monthStart && row.startAt <= monthEnd)
+      .map((row) => ({ startAt: row.startAt, endAt: row.endAt }))
+
+    const { days, slots } = summarizeMonthAvailability(dateKeys, booking, bookedRanges)
+    return { booking, days, slots }
+  },
+)
+
 export const createOrderSecure = onCall(
   { secrets: ['RESEND_API_KEY'], invoker: 'public' },
   async (request) => {
@@ -773,6 +818,9 @@ export const createOrderSecure = onCall(
       selectedVariants: item.selectedVariants && typeof item.selectedVariants === 'object' ? item.selectedVariants : {},
       image: sanitizeText(item.image || '', MAX_TEXT.long),
       needByDate: sanitizeText(item.needByDate || '', MAX_TEXT.short),
+      scheduledAt: Number(item.scheduledAt) || null,
+      scheduledEndAt: Number(item.scheduledEndAt) || null,
+      scheduledLabel: sanitizeText(item.scheduledLabel || '', MAX_TEXT.medium),
     }))
 
     if (safeItems.some((item) => !item.productId || !item.name || !Number.isFinite(item.price) || item.price < 0)) {
@@ -800,6 +848,28 @@ export const createOrderSecure = onCall(
     const needByDateError = getNeedByDateValidationError(itemsForShipping)
     if (needByDateError) {
       throw new HttpsError('invalid-argument', needByDateError)
+    }
+
+    const bookingItems = itemsForShipping.filter((item) => item.scheduledAt)
+    if (bookingItems.length > 0) {
+      const bookedByProduct = new Map()
+      for (const item of bookingItems) {
+        const product = productById.get(item.productId) || {}
+        if (!bookedByProduct.has(item.productId)) {
+          const apptSnap = await db.collection('appointments').where('productId', '==', item.productId).get()
+          bookedByProduct.set(
+            item.productId,
+            apptSnap.docs.map((docSnap) => {
+              const row = docSnap.data() || {}
+              return { startAt: row.startAt, endAt: row.endAt }
+            }),
+          )
+        }
+        const bookingError = validateBookingSlot(item, product, bookedByProduct.get(item.productId) || [])
+        if (bookingError) {
+          throw new HttpsError('failed-precondition', bookingError)
+        }
+      }
     }
 
     if (fulfillmentMethod === 'delivery') {
@@ -979,6 +1049,23 @@ export const createOrderSecure = onCall(
 
       if (computedTotal <= 0.009 && giftCardAmount > 0) {
         resolvedPaymentMethod = 'giftcard'
+      }
+
+      for (const item of itemsForShipping) {
+        if (!item.scheduledAt) continue
+        const apptRef = db.collection('appointments').doc(appointmentDocId(item.productId, item.scheduledAt))
+        const existingAppt = await tx.get(apptRef)
+        if (existingAppt.exists) {
+          throw new HttpsError('failed-precondition', 'That appointment time is no longer available.')
+        }
+        tx.set(apptRef, {
+          productId: item.productId,
+          startAt: item.scheduledAt,
+          endAt: item.scheduledEndAt,
+          orderId: orderRef.id,
+          status: 'booked',
+          createdAt: Date.now(),
+        })
       }
 
       const payload = {

@@ -5,6 +5,8 @@ import { defaultSettings } from '../config/defaults'
 import { createManualOrder, deleteOrder, getOrders, removeOrderNoteImages, updateOrder } from '../services/ordersService'
 import { getNotionSettings, updateNotionSettings } from '../services/settingsService'
 import { createProduct, getProducts, removeProduct, updateProduct } from '../services/productsService'
+import { BookingAdminFields } from '../components/BookingAdminFields'
+import { getDefaultProductBooking } from '../services/bookingService'
 import { createGalleryItem, getGalleryItems, removeGalleryItem, updateGalleryItem } from '../services/galleryService'
 import { uploadProductMedia, uploadProductBlob } from '../services/mediaService'
 import { ImageEditor } from '../components/ImageEditor'
@@ -64,6 +66,7 @@ const emptyProduct = {
   shippingSurcharge: 0,
   requiresNeedByDate: false,
   variants: [],
+  booking: getDefaultProductBooking(),
 }
 
 const emptyGalleryItem = {
@@ -613,6 +616,7 @@ export function Admin() {
       localOnly: Boolean(draftProduct.localOnly),
       shippingSurcharge: Math.max(0, Number(draftProduct.shippingSurcharge || 0)),
       requiresNeedByDate: Boolean(draftProduct.requiresNeedByDate),
+      booking: draftProduct.booking || getDefaultProductBooking(),
     }
 
     if (editingProductId) {
@@ -649,6 +653,7 @@ export function Admin() {
       localOnly: Boolean(product.localOnly),
       shippingSurcharge: Number(product.shippingSurcharge || 0),
       requiresNeedByDate: Boolean(product.requiresNeedByDate),
+      booking: product.booking || getDefaultProductBooking(),
       variants: (product.variants || []).map((variant) => ({
         ...variant,
         options: (variant.options || []).map((option) => ({
@@ -1376,6 +1381,12 @@ export function Admin() {
               />
               Require need-by date at checkout
             </label>
+
+            <BookingAdminFields
+              booking={draftProduct.booking}
+              onChange={(booking) => setDraftProduct((prev) => ({ ...prev, booking }))}
+            />
+
             <label className="checkbox-row">
               <input
                 type="checkbox"
@@ -2922,6 +2933,11 @@ export function Admin() {
                                 {addOns.length > 0 && (
                                   <div style={{ color: '#888', fontSize: '0.8rem', marginTop: 2 }}>
                                     Add-ons: {addOns.map((a) => a.label || a).join(', ')}
+                                  </div>
+                                )}
+                                {item.scheduledLabel && (
+                                  <div style={{ color: 'var(--brand-primary)', fontSize: '0.8rem', marginTop: 2, fontWeight: 600 }}>
+                                    Appointment: {item.scheduledLabel}
                                   </div>
                                 )}
                                 {item.needByDate && (

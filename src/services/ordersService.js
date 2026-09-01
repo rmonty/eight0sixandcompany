@@ -12,6 +12,7 @@ import { db, hasFirebaseConfig, functions } from './firebase'
 import { httpsCallable } from 'firebase/functions'
 import { deleteStorageFilesByUrl } from './mediaService'
 import { collectOrderNoteImageUrls } from '../utils/orderNoteImages'
+import { reserveMockAppointment } from './bookingService'
 
 const ordersCollection = () => collection(db, 'orders')
 
@@ -30,7 +31,18 @@ export const createOrder = async (order) => {
   }
 
   if (!hasFirebaseConfig) {
-    return { id: `local-order-${Date.now()}`, ...payload }
+    const orderId = `local-order-${Date.now()}`
+    for (const item of payload.items || []) {
+      if (item.scheduledAt) {
+        reserveMockAppointment({
+          productId: item.productId,
+          startAt: item.scheduledAt,
+          endAt: item.scheduledEndAt,
+          orderId,
+        })
+      }
+    }
+    return { id: orderId, ...payload }
   }
 
   if (!functions) {

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useCart } from '../contexts/CartContext'
 import { useSettings } from '../contexts/SettingsContext'
 import { getStoreProductById } from '../services/productsService'
 import { toCurrency } from '../utils/currency'
+import { isBookingEnabled } from '../utils/booking'
 import DOMPurify from 'dompurify'
 
 export function ProductDetail() {
@@ -356,8 +357,12 @@ export function ProductDetail() {
           </label>
         )}
 
-        <div style={{ display: 'flex', gap: 12, marginTop: 20 }}>
-          {pricingMode === 'standard' || pricingMode === 'range' ? (
+        <div style={{ display: 'flex', gap: 12, marginTop: 20, flexWrap: 'wrap' }}>
+          {isBookingEnabled(product) ? (
+            <Link className="primary-btn" to={`/shop/${product.id}/schedule`}>
+              Schedule Appointment
+            </Link>
+          ) : pricingMode === 'standard' || pricingMode === 'range' ? (
             <button
               type="button"
               className="primary-btn"

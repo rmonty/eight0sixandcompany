@@ -72,6 +72,11 @@ export function OwnerNewOrderEmail({
                           {' '}({addOns.map((a) => a.label || a).join(', ')})
                         </span>
                       )}
+                      {item.scheduledLabel && (
+                        <span style={itemAddOn}>
+                          {' '}Appointment: {item.scheduledLabel}
+                        </span>
+                      )}
                       {item.needByDate && (
                         <span style={itemAddOn}>
                           {' '}Need by: {item.needByDate}

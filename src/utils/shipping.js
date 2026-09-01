@@ -65,6 +65,7 @@ export function getFulfillmentValidationError(items, fulfillmentMethod) {
 
 export function getNeedByDateValidationError(items) {
   const missing = items.filter((item) => {
+    if (item.scheduledAt) return false
     const normalized = normalizeItemShipping(item)
     return normalized.requiresNeedByDate && !String(item.needByDate || '').trim()
   })
@@ -74,12 +75,16 @@ export function getNeedByDateValidationError(items) {
 }
 
 export function mergeItemShippingFields(item = {}, product = {}) {
+  const bookingEnabled = Boolean(product.booking?.enabled)
   return {
     ...item,
-    shippable: product.shippable !== false,
-    localOnly: Boolean(product.localOnly),
+    shippable: bookingEnabled ? false : product.shippable !== false,
+    localOnly: bookingEnabled ? true : Boolean(product.localOnly),
     shippingSurcharge: Math.max(0, Number(product.shippingSurcharge || 0)),
-    requiresNeedByDate: Boolean(product.requiresNeedByDate),
+    requiresNeedByDate: bookingEnabled ? false : Boolean(product.requiresNeedByDate),
+    scheduledAt: item.scheduledAt || null,
+    scheduledEndAt: item.scheduledEndAt || null,
+    scheduledLabel: item.scheduledLabel || '',
   }
 }
 

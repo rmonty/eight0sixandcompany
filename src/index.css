@@ -3479,3 +3479,235 @@ h1 {
     white-space: normal;
   }
 }
+
+/* ─────────────────────────────────────────────
+   Appointment scheduling
+───────────────────────────────────────────── */
+.schedule-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.schedule-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.schedule-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+}
+
+.schedule-header p {
+  margin: 0;
+  color: #5a3040;
+}
+
+.schedule-panel {
+  margin-top: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(188, 98, 140, 0.2);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(36, 35, 35, 0.06);
+}
+
+.schedule-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-panel-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.schedule-timezone {
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(240px, 1fr);
+  gap: 1.5rem;
+}
+
+.schedule-calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-weekdays,
+.schedule-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.schedule-weekdays span {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #888;
+  padding: 4px 0;
+}
+
+.schedule-day {
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff8fb;
+  color: var(--brand-dark);
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.schedule-day--empty {
+  background: transparent;
+  cursor: default;
+}
+
+.schedule-day--selected {
+  background: var(--brand-primary);
+  color: #fff;
+}
+
+.schedule-day--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.schedule-day-dot {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--brand-bright);
+}
+
+.schedule-day--selected .schedule-day-dot {
+  background: #fff;
+}
+
+.schedule-times h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.schedule-info {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  color: #5a3040;
+}
+
+.schedule-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 8px;
+}
+
+.schedule-slot {
+  border: 1px solid rgba(188, 98, 140, 0.35);
+  border-radius: 8px;
+  padding: 0.55rem 0.35rem;
+  background: #fff;
+  color: var(--brand-dark);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.schedule-slot--selected {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+}
+
+.schedule-slot--unavailable {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.schedule-placeholder {
+  color: #888;
+}
+
+.schedule-details {
+  margin-top: 1.5rem;
+}
+
+.schedule-details h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.schedule-service-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.schedule-service-price {
+  margin: 0.25rem 0 0;
+  color: #5a3040;
+}
+
+.schedule-next-btn {
+  margin-top: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.85rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--brand-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.schedule-next-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.admin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(188, 98, 140, 0.12);
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+}
+
+.admin-chip button {
+  border: none;
+  background: transparent;
+  color: var(--brand-primary);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}

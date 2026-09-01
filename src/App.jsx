@@ -18,6 +18,7 @@ import { Home } from './pages/Home'
 import { Gallery } from './pages/Gallery'
 import { OrderConfirmation } from './pages/OrderConfirmation'
 import { ProductDetail } from './pages/ProductDetail'
+import { Schedule } from './pages/Schedule'
 import { PrivacyPolicy } from './pages/PrivacyPolicy'
 import { RefundPolicy } from './pages/RefundPolicy'
 import { Shop } from './pages/Shop'
@@ -33,6 +34,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="shop/:productId" element={<ProductDetail />} />
+        <Route path="shop/:productId/schedule" element={<Schedule />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="cart" element={<Cart />} />
         <Route path="checkout" element={<Checkout />} />

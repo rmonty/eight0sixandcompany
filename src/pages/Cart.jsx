@@ -66,7 +66,17 @@ export function Cart() {
                   {formatSelectedVariantsText(item.selectedVariants, item.variants)}
                 </p>
               )}
+              {item.scheduledLabel && (
+                <p style={{ marginTop: 4, fontSize: '0.88rem', color: 'var(--brand-primary)', fontWeight: 600 }}>
+                  {item.scheduledLabel}
+                </p>
+              )}
               <p>{toCurrency(item.price)}</p>
+              {item.bookingDeposit > 0 && (
+                <p style={{ marginTop: 4, fontSize: '0.85rem', color: '#5a3040' }}>
+                  Deposit now · {toCurrency(item.balanceDue || 0)} due at appointment
+                </p>
+              )}
               {item.addOns?.length > 0 && (
                 <p style={{ marginTop: 4, fontSize: '0.88rem', color: '#5a3040' }}>
                   {item.addOns.map((addOn) => `${addOn.label} (+${toCurrency(addOn.price)})`).join(', ')}
